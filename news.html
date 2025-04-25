@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>News - Mirekua International Community School</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="icon" href="images/micslogo.png" type="image/x-icon">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <style>
+    body {
+      background: #fff;
+    }
+    .news-header {
+      text-align: center;
+      margin-top: 30px;
+      margin-bottom: 30px;
+      font-size: 1.1rem;
+      color: #1C1F2C;
+    }
+    .news-list {
+      max-width: 700px;
+      margin: 0 auto 60px auto;
+      display: flex;
+      flex-direction: column;
+      gap: 40px;
+    }
+    .news-card {
+      background: #fff;
+      border-radius: 12px;
+      box-shadow: 0 2px 12px rgba(28,31,44,0.08);
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+    }
+    .news-img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+      background: #eee;
+    }
+    .news-meta {
+      font-size: 0.92rem;
+      color: #888;
+      margin: 12px 0 0 0;
+      padding-left: 18px;
+    }
+    .news-content {
+      padding: 18px 18px 18px 18px;
+      width: 100%;
+    }
+    .news-title {
+      color: #7C0000;
+      font-size: 1.08rem;
+      font-weight: 700;
+      margin-bottom: 6px;
+      margin-top: 0;
+      text-decoration: none;
+      display: inline-block;
+    }
+    .news-desc {
+      color: #1C1F2C;
+      font-size: 1rem;
+      margin-bottom: 16px;
+      margin-top: 0;
+    }
+    .news-actions {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      margin-bottom: 8px;
+      padding-left: 18px;
+    }
+    .news-share {
+      color: #888;
+      font-size: 1.1rem;
+      cursor: pointer;
+      margin-right: 8px;
+    }
+    .news-read-btn {
+      background: #7C0000;
+      color: #fff;
+      border: none;
+      font-weight: 600;
+      padding: 7px 22px;
+      border-radius: 4px;
+      font-size: 0.98rem;
+      transition: background 0.2s, color 0.2s;
+      text-decoration: none;
+      display: inline-block;
+    }
+    .news-read-btn:hover {
+      background: #C09B2A;
+      color: #1C1F2C;
+    }
+    @media (max-width: 800px) {
+      .news-list { max-width: 98vw; }
+      .news-card { border-radius: 0; }
+    }
+    @media (max-width: 600px) {
+      .news-img { height: 120px; }
+      .news-content { padding: 12px 8px 12px 8px; }
+    }
+  </style>
+</head>
+<body>
+  <!-- Header/Navbar -->
+  <div class="topbar">
+    <div class="topbar-container">
+      <div class="topbar-left">
+        <a href="https://admin.smartsapp.com/auth/login" class="topbar-btn">Staff Login &rsaquo;</a>
+        <a href="https://admin.smartsapp.com/auth/login" class="topbar-btn">Email Login &rsaquo;</a>
+        <a href="https://admin.smartsapp.com/auth/login" class="topbar-btn">Student Login &rsaquo;</a>
+        <a href="careers.html" class="topbar-btn">Careers &rsaquo;</a>
+      </div>
+      <div class="topbar-center">
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-facebook"></i></a>
+        <a href="#"><i class="fab fa-tiktok"></i></a>
+      </div>
+      <div class="topbar-right">
+        <a href="contact.html" class="topbar-btn">Call Us &rsaquo;</a>
+      </div>
+    </div>
+  </div>
+    <!-- Nav bar -->
+	  <nav class="navbar navbar-expand-lg ftco_navbar ftco-navbar-light custom-navbar" id="ftco-navbar">
+      <div class="container d-flex align-items-center justify-content-between">
+      
+        <!-- Logo + School Name -->
+        <a class="navbar-brand d-flex align-items-center" href="index.html">
+        <img src="images/School Logo. png.png" alt="Mirekua Logo" class="navbar-logo">
+        <div class="school-name ml-2">
+          <!-- You can add the school name text here -->
+        </div>
+        </a>
+      
+        <!-- Toggle for mobile -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="oi oi-menu"></span>
+        </button>
+      
+        <!-- Nav Links -->
+        <div class="collapse navbar-collapse" id="ftco-nav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item active"><a href="index.html" class="nav-link">Home</a></li>
+      
+          <!-- About Dropdown -->
+          <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="aboutDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            About
+          </a>
+          <div class="dropdown-menu custom-dropdown" aria-labelledby="aboutDropdown">
+            <a class="dropdown-item" href="about.html">Our History</a>
+            <a class="dropdown-item" href="bod.html">Board of Directors</a>
+          </div>
+          </li>
+      
+          <li class="nav-item"><a href="academics.html" class="nav-link">Academics</a></li>
+      
+          <!-- Admissions Dropdown -->
+          <li class="nav-item dropdown active">
+          <a class="nav-link dropdown-toggle" href="admission.html" id="admissionsDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Admissions
+          </a>
+          <div class="dropdown-menu custom-dropdown" aria-labelledby="admissionsDropdown">
+            <a class="dropdown-item" href="admission.html">Overview</a>
+            <a class="dropdown-item" href="apply-online.html">Apply Online</a>
+            <a class="dropdown-item" href="download-form.html">Download Form</a>
+          </div>
+          </li>
+  
+          <!-- MiCS Experience Dropdown -->
+          <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="mics-experience.html" id="micsExperienceDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            MiCS Experience
+          </a>
+          <div class="dropdown-menu custom-dropdown" aria-labelledby="micsExperienceDropdown">
+            <a class="dropdown-item" href="calendar.html">Academic Calendar</a>
+            <a class="dropdown-item" href="students-policy.html">Student Policy</a>
+            <a class="dropdown-item" href="uniforms.html">Uniforms</a>
+            <a class="dropdown-item" href="clubs.html">Clubs & Activities</a>
+          </div>
+          </li>
+  
+          <!-- Information Dropdown -->
+          <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="information.html" id="informationDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Information
+          </a>
+          <div class="dropdown-menu custom-dropdown" aria-labelledby="informationDropdown">
+            <a class="dropdown-item" href="news.html">News</a>
+            <a class="dropdown-item" href="events.html">Events</a>
+            <a class="dropdown-item" href="announcements.html">Announcements</a>
+            <a class="dropdown-item" href="faqs.html">FAQs</a>
+          </div>
+          </li>
+          <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+        </ul>
+        </div>
+        
+      </nav>
+      <!-- END nav -->
+      
+  <div class="news-header">
+    News Articles
+  </div>
+  <div class="news-list">
+    <!-- Featured News Card: Central Regional Campus Tour Flyer -->
+    <div class="news-card">
+      <img src="images/Tour.jpg" alt="Central Regional Campus Tour Flyer" class="news-img">
+      <div class="news-content">
+        <div class="news-meta" style="color:#7C0000;">15 April 2025 &nbsp; | &nbsp; Campus Life, Events, Tours</div>
+        <div class="news-actions">
+          <span class="news-share"><i class="fas fa-share-alt"></i></span>
+          <a href="#" class="news-title" style="color:#7C0000;">CENTRAL REGIONAL CAMPUS TOUR: UPCOMING EVENT</a>
+        </div>
+        <p class="news-desc">
+          We are excited to announce our Central Regional Campus Tour! Students will visit top schools in the Central Region, including Mfantsipim School, St. Augustine’s College, Adisadel College, Wesley Girls’ High School, Holy Child School, Mfantsiman Girls, and the University of Cape Coast. This enriching experience is designed to prepare learners for their next academic journey after MICS.
+        </p>
+        <a href="#" class="news-read-btn" style="background:#7C0000;">READ MORE</a>
+      </div>
+    </div>
+    <!-- News Card 1: Central Region Campus Tour -->
+    <div class="news-card">
+      <img src="images/news-central-tour.jpg" alt="Central Region Campus Tour" class="news-img">
+      <div class="news-content">
+        <div class="news-meta">15 April 2025 &nbsp; | &nbsp; Campus Life, Events, Tours</div>
+        <div class="news-actions">
+          <span class="news-share"><i class="fas fa-share-alt"></i></span>
+          <a href="#" class="news-title" style="color:#7C0000;">MICS STUDENTS EXPLORE TOP SCHOOLS ON CENTRAL REGION CAMPUS TOUR</a>
+        </div>
+        <p class="news-desc">
+          Mirekua International Community School recently organized an inspiring Central Region Campus Tour for Grades 5 to JHS2. Students visited renowned institutions including Mfantsipim School, St. Augustine’s College, Adisadel College, Wesley Girls’ High School, Holy Child School, Mfantsiman Girls, and the University of Cape Coast. The tour aimed to prepare learners for their next academic journey, offering them a glimpse into the vibrant culture and academic excellence of these prestigious schools. The experience was both educational and memorable for all participants.
+        </p>
+        <a href="news-details.html?id=central-tour" class="news-read-btn" style="background:#7C0000;">READ MORE</a>
+      </div>
+    </div>
+    <!-- News Card 2: UC MAS DAY Competition -->
+    <div class="news-card">
+      <img src="images/news-ucmas.jpg" alt="UC MAS Day Competition" class="news-img">
+      <div class="news-content">
+        <div class="news-meta">8 June 2024 &nbsp; | &nbsp; Academics, Competitions</div>
+        <div class="news-actions">
+          <span class="news-share"><i class="fas fa-share-alt"></i></span>
+          <a href="#" class="news-title" style="color:#C09B2A;">MICS SHINES AT UC MAS DAY COMPETITION</a>
+        </div>
+        <p class="news-desc">
+          Congratulations to our brilliant students for their outstanding performance at the recent UC MAS DAY competition! MICS participants demonstrated exceptional mental arithmetic skills, teamwork, and confidence, earning accolades and making the school community proud. The event fostered a spirit of healthy competition and celebrated the power of focused learning and innovation.
+        </p>
+        <a href="news-details.html?id=ucmas" class="news-read-btn" style="background:#C09B2A; color:#fff;">READ MORE</a>
+      </div>
+    </div>
+    <div class="news-card">
+      <img src="images/news-cambridge.jpg" alt="Students gear up for Cambridge exams" class="news-img">
+      <div class="news-content">
+        <div class="news-meta">20 June 2024 &nbsp; | &nbsp; Academics, Events, Clubs</div>
+        <div class="news-actions">
+          <span class="news-share"><i class="fas fa-share-alt"></i></span>
+          <a href="#" class="news-title">MICS Candidates Prepare for Cambridge Exams at Annual Retreat</a>
+        </div>
+        <p class="news-desc">
+          MICS recently hosted its annual Cambridge Candidates Retreat, providing a focused and supportive environment for students preparing for their Cambridge examinations. The retreat featured interactive workshops, study sessions, and motivational talks led by experienced faculty and Cambridge Supervisory Delegates.
+        </p>
+        <a href="news-details.html?id=cambridge" class="news-read-btn">READ MORE</a>
+      </div>
+    </div>
+    <!-- News Card 2 -->
+    <div class="news-card">
+      <img src="images/news-alumni.jpg" alt="MICS Welcomes Alumni Back Home" class="news-img">
+      <div class="news-content">
+        <div class="news-meta">15 June 2024 &nbsp; | &nbsp; Anniversaries, Community</div>
+        <div class="news-actions">
+          <span class="news-share"><i class="fas fa-share-alt"></i></span>
+          <a href="#" class="news-title">MICS Welcomes Alumni Back for Homecoming & 25th Anniversary</a>
+        </div>
+        <p class="news-desc">
+          Mirekua International Community School proudly welcomed alumni, students, and families to celebrate its 25th anniversary. The homecoming event was filled with joy, laughter, and a strong sense of community as past and present members of the MICS family reconnected and shared their stories.
+        </p>
+        <a href="news-details.html?id=alumni" class="news-read-btn">READ MORE</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="footer" style="background: #1C1F2C; color: #fff; padding: 60px 0 30px 0; margin-top:60px;">
+    <div class="container">
+      <div class="row">
+        <!-- Logo and Description -->
+        <div class="col-md-3 mb-4">
+          <img src="images/Logo white.png" alt="Mirekua Logo" class="mb-3" style="max-width: 120px;">
+          <h5 class="text-uppercase font-weight-bold mb-0" style="color: #fff;">MIREKUA</h5>
+          <p class="mb-0" style="color: #fff;">INTERNATIONAL<br>COMMUNITY SCHOOL</p>
+        </div>
+        <!-- Quick Navigation -->
+        <div class="col-md-3 mb-4">
+          <h6 class="text-uppercase mb-3" style="color: #fff;">Quick Navigation</h6>
+          <div class="row">
+            <div class="col-6">
+              <ul class="list-unstyled">
+                <li><a href="about.html" class="text-light">About</a></li>
+                <li><a href="academics.html" class="text-light">Academics</a></li>
+                <li><a href="students-policy.html" class="text-light">Students</a></li>
+                <li><a href="parents.html" class="text-light">Parents</a></li>
+              </ul>
+            </div>
+            <div class="col-6">
+              <ul class="list-unstyled">
+                <li><a href="news.html" class="text-light">News</a></li>
+                <li><a href="events.html" class="text-light">Events</a></li>
+                <li><a href="admission.html" class="text-light">Admissions</a></li>
+                <li><a href="contact.html" class="text-light">Contact</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <!-- Stay Connected -->
+        <div class="col-md-3 mb-4">
+          <h6 class="text-uppercase mb-3" style="color: #fff;">Stay Connected</h6>
+          <ul class="list-unstyled">
+            <li><a href="#" class="text-light">Facebook</a></li>
+            <li><a href="#" class="text-light">Twitter</a></li>
+            <li><a href="#" class="text-light">Instagram</a></li>
+            <li><a href="#" class="text-light">YouTube</a></li>
+          </ul>
+        </div>
+        <!-- Get in Touch -->
+        <div class="col-md-3 mb-4">
+          <h6 class="text-uppercase mb-3" style="color: #fff;">Get in Touch</h6>
+          <p class="mb-1" style="color: #fff;">Sisi Mirekua Street, Opah<br>(Near Amasaman) Accra.</p>
+          <p class="mb-1" style="color: #fff;">GW-02032246</p>
+          <p style="color: #fff;">0551477222, 0551443777</p>
+        </div>
+      </div>
+      <!-- Footer Bottom -->
+      <div class="row mt-4">
+        <div class="col text-center">
+          <small style="color: #fff;">&copy; <script>document.write(new Date().getFullYear());</script> Mirekua International Community School</small>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts (if needed) -->
+  <script src="js/jquery.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Contact - Mirekua International Community School</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="icon" href="images/micslogo.png" type="image/x-icon">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <style>
+    body { background: #FDF3ED; }
+    .contact-header {
+      background: #7C0000;
+      color: #FDF3ED;
+      padding: 60px 0 40px 0;
+      text-align: center;
+    }
+    .contact-header h1 {
+      color: #FDF3ED;
+      font-size: 2.5rem;
+      font-weight: 700;
+      letter-spacing: 2px;
+    }
+    .contact-section {
+      padding: 40px 0;
+      max-width: 900px;
+      margin: 0 auto;
+    }
+    .contact-info-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 24px;
+      margin-bottom: 32px;
+      justify-content: center;
+    }
+    .contact-info-card {
+      background: #fff;
+      border-radius: 12px;
+      box-shadow: 0 2px 12px rgba(28,31,44,0.08);
+      padding: 28px 22px;
+      min-width: 220px;
+      flex: 1 1 220px;
+      text-align: center;
+      border-left: 6px solid #C09B2A;
+    }
+    .contact-info-card h3 {
+      color: #7C0000;
+      font-size: 1.2rem;
+      font-weight: 700;
+      margin-bottom: 10px;
+    }
+    .contact-info-card p, .contact-info-card a {
+      color: #1C1F2C;
+      font-size: 1.08rem;
+      margin-bottom: 0;
+      text-decoration: none;
+    }
+    .contact-form-map-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 32px;
+      margin-top: 24px;
+      justify-content: center;
+    }
+    .contact-form-container {
+      background: #fff;
+      border-radius: 12px;
+      box-shadow: 0 2px 12px rgba(28,31,44,0.08);
+      padding: 28px 22px;
+      flex: 1 1 340px;
+      min-width: 320px;
+      max-width: 400px;
+    }
+    .contact-form-container input,
+    .contact-form-container textarea {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 14px;
+      border: 1px solid #C09B2A;
+      border-radius: 4px;
+      font-size: 1rem;
+      background: #FDF3ED;
+      color: #1C1F2C;
+    }
+    .contact-form-container input[type="submit"] {
+      background: #C09B2A;
+      color: #fff;
+      font-weight: 600;
+      border: none;
+      cursor: pointer;
+      transition: background 0.2s;
+      padding: 10px 0;
+    }
+    .contact-form-container input[type="submit"]:hover {
+      background: #7C0000;
+    }
+    .contact-map-container {
+      flex: 1 1 340px;
+      min-width: 320px;
+      max-width: 400px;
+      height: 340px;
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 2px 12px rgba(28,31,44,0.08);
+      background: #fff;
+    }
+    #map {
+      width: 100%;
+      height: 100%;
+      min-height: 320px;
+    }
+    @media (max-width: 900px) {
+      .contact-section { padding: 24px 2vw; }
+      .contact-info-row, .contact-form-map-row { flex-direction: column; gap: 18px; }
+      .contact-map-container, .contact-form-container { max-width: 100%; }
+    }
+  </style>
+</head>
+<body>
+  <!-- Header/Navbar -->
+  <div class="topbar">
+    <div class="topbar-container">
+      <div class="topbar-left">
+        <a href="https://admin.smartsapp.com/auth/login" class="topbar-btn">Staff Login &rsaquo;</a>
+        <a href="https://admin.smartsapp.com/auth/login" class="topbar-btn">Email Login &rsaquo;</a>
+        <a href="https://admin.smartsapp.com/auth/login" class="topbar-btn">Student Login &rsaquo;</a>
+        <a href="careers.html" class="topbar-btn">Careers &rsaquo;</a>
+      </div>
+      <div class="topbar-center">
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-facebook"></i></a>
+        <a href="#"><i class="fab fa-tiktok"></i></a>
+      </div>
+      <div class="topbar-right">
+        <a href="contact.html" class="topbar-btn">Call Us &rsaquo;</a>
+      </div>
+    </div>
+  </div>
+  <nav class="navbar navbar-expand-lg ftco_navbar ftco-navbar-light custom-navbar" id="ftco-navbar">
+    <div class="container d-flex align-items-center justify-content-between">
+      <a class="navbar-brand d-flex align-items-center" href="index.html">
+        <img src="images/School Logo. png.png" alt="Mirekua Logo" class="navbar-logo">
+        <div class="school-name ml-2"></div>
+      </a>
+      <button class="navbar-toggler text-white" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="oi oi-menu"></span> Menu
+      </button>
+      <div class="collapse navbar-collapse" id="ftco-nav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="aboutDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              About
+            </a>
+            <div class="dropdown-menu custom-dropdown" aria-labelledby="aboutDropdown">
+              <a class="dropdown-item" href="about.html">Our History</a>
+              <a class="dropdown-item" href="bod.html">Board of Directors</a>
+            </div>
+          </li>
+          <li class="nav-item"><a href="academics.html" class="nav-link">Academics</a></li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="admission.html" id="admissionsDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Admissions
+            </a>
+            <div class="dropdown-menu custom-dropdown" aria-labelledby="admissionsDropdown">
+              <a class="dropdown-item" href="admission.html">Overview</a>
+              <a class="dropdown-item" href="apply-online.html">Apply Online</a>
+              <a class="dropdown-item" href="download-form.html">Download Form</a>
+            </div>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="mics-experience.html" id="micsExperienceDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              MiCS Experience
+            </a>
+            <div class="dropdown-menu custom-dropdown" aria-labelledby="micsExperienceDropdown">
+              <a class="dropdown-item" href="calendar.html">Academic Calendar</a>
+              <a class="dropdown-item" href="students-policy.html">Student Policy</a>
+              <a class="dropdown-item" href="uniforms.html">Parents Policy</a>
+              <a class="dropdown-item" href="clubs.html">Clubs & Activities</a>
+            </div>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="information.html" id="informationDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Information
+            </a>
+            <div class="dropdown-menu custom-dropdown" aria-labelledby="informationDropdown">
+              <a class="dropdown-item" href="news.html">News</a>
+              <a class="dropdown-item" href="events.html">Events</a>
+              <a class="dropdown-item" href="announcements.html">Announcements</a>
+              <a class="dropdown-item" href="faqs.html">FAQs</a>
+            </div>
+          </li>
+          <li class="nav-item active"><a href="contact.html" class="nav-link">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- END nav -->
+
+  <div class="contact-header">
+    <h1>Contact Us</h1>
+    <p style="color:#C09B2A; font-size:1.2rem;">We'd love to hear from you</p>
+  </div>
+  <section class="contact-section">
+    <div class="contact-info-row">
+      <div class="contact-info-card">
+        <h3>Address</h3>
+        <p>Sisi Mirekua Street, Opah<br>(Near Amasaman) Accra.</p>
+        <p>GW-02032246</p>
+      </div>
+      <div class="contact-info-card">
+        <h3>Contact Number</h3>
+        <p><a href="tel:0551477222">0551477222</a>, <a href="tel:0551443777">0551443777</a></p>
+      </div>
+      <div class="contact-info-card">
+        <h3>Email Address</h3>
+        <p><a href="mailto:info@mirekuaics.edu.gh">info@mirekuaics.edu.gh</a></p>
+      </div>
+      <div class="contact-info-card">
+        <h3>Website</h3>
+        <p><a href="https://mirekuaics.edu.gh" target="_blank">mirekuaics.edu.gh</a></p>
+      </div>
+    </div>
+    <div class="contact-form-map-row">
+      <div class="contact-form-container">
+        <form action="#" method="post">
+          <input type="text" name="name" placeholder="Your Name" required>
+          <input type="email" name="email" placeholder="Your Email" required>
+          <input type="text" name="subject" placeholder="Subject" required>
+          <textarea name="message" rows="6" placeholder="Message" required></textarea>
+          <input type="submit" value="Send Message">
+        </form>
+      </div>
+      <div class="contact-map-container">
+        <div id="map"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer bg-dark text-light py-5">
+    <div class="container">
+      <div class="row">
+        <!-- Logo and Description -->
+        <div class="col-md-3 mb-4">
+          <img src="images/Logo white.png" alt="Mirekua Logo" class="mb-3" style="max-width: 120px;">
+          <h5 class="text-uppercase font-weight-bold mb-0">MIREKUA</h5>
+          <p class="mb-0">INTERNATIONAL<br>COMMUNITY SCHOOL</p>
+        </div>
+        <!-- Quick Navigation -->
+        <div class="col-md-3 mb-4">
+          <h6 class="text-uppercase mb-3">Quick Navigation</h6>
+          <div class="row">
+            <div class="col-6">
+              <ul class="list-unstyled">
+                <li><a href="#" class="text-light">About</a></li>
+                <li><a href="#" class="text-light">Academics</a></li>
+                <li><a href="#" class="text-light">Students</a></li>
+                <li><a href="#" class="text-light">Parents</a></li>
+              </ul>
+            </div>
+            <div class="col-6">
+              <ul class="list-unstyled">
+                <li><a href="#" class="text-light">News</a></li>
+                <li><a href="#" class="text-light">Events</a></li>
+                <li><a href="#" class="text-light">Admissions</a></li>
+                <li><a href="#" class="text-light">Contact</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <!-- Stay Connected -->
+        <div class="col-md-3 mb-4">
+          <h6 class="text-uppercase mb-3">Stay Connected</h6>
+          <ul class="list-unstyled">
+            <li><a href="#" class="text-light">Facebook</a></li>
+            <li><a href="#" class="text-light">Twitter</a></li>
+            <li><a href="#" class="text-light">Instagram</a></li>
+            <li><a href="#" class="text-light">Youtube</a></li>
+          </ul>
+        </div>
+        <!-- Get in Touch -->
+        <div class="col-md-3 mb-4">
+          <h6 class="text-uppercase mb-3">Get in Touch</h6>
+          <p class="mb-1">Sisi Mirekua Street, Opah<br>(Near Amasaman) Accra.</p>
+          <p class="mb-1">GW-02032246</p>
+          <p>0551477222, 0551443777</p>
+        </div>
+      </div>
+      <!-- Footer Bottom -->
+      <div class="row mt-4">
+        <div class="col text-center">
+          <small>&copy; <script>document.write(new Date().getFullYear());</script> by Mirekua International Community School</small>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts: Ensure these are present and in this order -->
+  <script src="js/jquery.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <!-- Google Maps API -->
+  <script>
+    function initMap() {
+      // Mirekua International Community School coordinates (example: near Amasaman, Accra)
+      var micsLocation = { lat: 5.715, lng: -0.309 }; // Replace with your actual coordinates if needed
+      var map = new google.maps.Map(document.getElementById('map'), {
+        zoom: 15,
+        center: micsLocation,
+        mapTypeId: 'roadmap'
+      });
+      var marker = new google.maps.Marker({
+        position: micsLocation,
+        map: map,
+        title: 'Mirekua International Community School'
+      });
+    }
+  </script>
+  <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_GOOGLE_MAPS_API_KEY&callback=initMap" async defer></script>
+</body>
+</html>

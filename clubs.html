@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Clubs - Mirekua International Community School</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="icon" href="images/micslogo.png" type="image/x-icon">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <style>
+    body {
+      background: #f6fbfd;
+    }
+    .clubs-header {
+      text-align: center;
+      margin-top: 40px;
+      margin-bottom: 10px;
+    }
+    .clubs-header h1 {
+      color: #E09B2A;
+      font-size: 2.2rem;
+      font-weight: 700;
+      letter-spacing: 1px;
+      margin-bottom: 10px;
+      text-transform: uppercase;
+    }
+    .clubs-header p {
+      color: #1C1F2C;
+      font-size: 1.1rem;
+      max-width: 700px;
+      margin: 0 auto 20px auto;
+    }
+    .clubs-row {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 32px;
+      margin: 40px 0 0 0;
+    }
+    .club-card {
+      background: #fff;
+      border-radius: 12px;
+      box-shadow: 0 2px 12px rgba(28,31,44,0.08);
+      width: 260px;
+      margin-bottom: 30px;
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    .club-card img {
+      width: 100%;
+      height: 160px;
+      object-fit: cover;
+      border-top-left-radius: 12px;
+      border-top-right-radius: 12px;
+    }
+    .club-card-content {
+      padding: 20px 18px 24px 18px;
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+    .club-card-content h3 {
+      color: #E09B2A;
+      font-size: 1.15rem;
+      font-weight: 700;
+      margin-bottom: 10px;
+      margin-top: 0;
+    }
+    .club-card-content p {
+      color: #1C1F2C;
+      font-size: 1rem;
+      margin-bottom: 0;
+    }
+    .extra-curricular-section {
+      background: #fff;
+      padding: 50px 0 40px 0;
+      margin-top: 40px;
+      text-align: center;
+    }
+    .extra-curricular-section h2 {
+      color: #E09B2A;
+      font-size: 1.5rem;
+      font-weight: 700;
+      margin-bottom: 8px;
+    }
+    .extra-curricular-section p {
+      color: #1C1F2C;
+      font-size: 1.05rem;
+      margin-bottom: 30px;
+    }
+    .extra-icons-row {
+      display: flex;
+      justify-content: center;
+      gap: 48px;
+      flex-wrap: wrap;
+      margin-top: 20px;
+    }
+    .extra-icon {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      font-size: 2.2rem;
+      margin-bottom: 18px;
+    }
+    .extra-icon span {
+      font-size: 1.1rem;
+      font-weight: 700;
+      margin-top: 8px;
+      display: block;
+    }
+    .extra-icon.ucmas { color: #E23145; }
+    .extra-icon.coding { color: #2196f3; }
+    .extra-icon.taekwondo { color: #1abc54; }
+    .extra-icon.music { color: #8e24aa; }
+    .extra-icon.ballet { color: #FFA500; }
+    @media (max-width: 1100px) {
+      .clubs-row { gap: 18px; }
+      .club-card { width: 45vw; min-width: 220px; }
+    }
+    @media (max-width: 700px) {
+      .clubs-row { flex-direction: column; align-items: center; }
+      .club-card { width: 95vw; }
+      .extra-icons-row { gap: 24px; }
+    }
+  </style>
+</head>
+<body>
+  <!-- Header/Navbar -->
+  <div class="topbar">
+    <div class="topbar-container">
+      <div class="topbar-left">
+        <a href="https://admin.smartsapp.com/auth/login" class="topbar-btn">Staff Login &rsaquo;</a>
+        <a href="https://admin.smartsapp.com/auth/login" class="topbar-btn">Email Login &rsaquo;</a>
+        <a href="https://admin.smartsapp.com/auth/login" class="topbar-btn">Student Login &rsaquo;</a>
+        <a href="careers.html" class="topbar-btn">Careers &rsaquo;</a>
+      </div>
+      <div class="topbar-center">
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-facebook"></i></a>
+        <a href="#"><i class="fab fa-tiktok"></i></a>
+      </div>
+      <div class="topbar-right">
+        <a href="contact.html" class="topbar-btn">Call Us &rsaquo;</a>
+      </div>
+    </div>
+  </div>
+  <nav class="navbar navbar-expand-lg ftco_navbar ftco-navbar-light custom-navbar" id="ftco-navbar">
+    <div class="container d-flex align-items-center justify-content-between">
+      <a class="navbar-brand d-flex align-items-center" href="index.html">
+        <img src="images/School Logo. png.png" alt="Mirekua Logo" class="navbar-logo">
+        <div class="school-name ml-2"></div>
+      </a>
+      <button class="navbar-toggler text-white" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="oi oi-menu"></span> Menu
+      </button>
+      <div class="collapse navbar-collapse" id="ftco-nav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="aboutDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              About
+            </a>
+            <div class="dropdown-menu custom-dropdown" aria-labelledby="aboutDropdown">
+              <a class="dropdown-item" href="about.html">Our History</a>
+              <a class="dropdown-item" href="bod.html">Board of Directors</a>
+            </div>
+          </li>
+          <li class="nav-item"><a href="academics.html" class="nav-link">Academics</a></li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="admission.html" id="admissionsDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Admissions
+            </a>
+            <div class="dropdown-menu custom-dropdown" aria-labelledby="admissionsDropdown">
+              <a class="dropdown-item" href="admission.html">Overview</a>
+              <a class="dropdown-item" href="apply-online.html">Apply Online</a>
+              <a class="dropdown-item" href="download-form.html">Download Form</a>
+            </div>
+          </li>
+          <li class="nav-item dropdown active">
+            <a class="nav-link dropdown-toggle" href="mics-experience.html" id="micsExperienceDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              MiCS Experience
+            </a>
+            <div class="dropdown-menu custom-dropdown" aria-labelledby="micsExperienceDropdown">
+              <a class="dropdown-item" href="calendar.html">Academic Calendar</a>
+              <a class="dropdown-item" href="students-policy.html">Student Policy</a>
+              <a class="dropdown-item" href="uniforms.html">Parents Policy</a>
+              <a class="dropdown-item active" href="clubs.html">Clubs & Activities</a>
+            </div>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="information.html" id="informationDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Information
+            </a>
+            <div class="dropdown-menu custom-dropdown" aria-labelledby="informationDropdown">
+              <a class="dropdown-item" href="news.html">News</a>
+              <a class="dropdown-item" href="events.html">Events</a>
+              <a class="dropdown-item" href="announcements.html">Announcements</a>
+              <a class="dropdown-item" href="faqs.html">FAQs</a>
+            </div>
+          </li>
+          <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- END nav -->
+
+  <div class="clubs-header">
+    <h1>CLUBS</h1>
+    <p>
+      Welcome to the World of Clubs at Mirekua International Community School!<br>
+      Our clubs ignite student passion, cultivate essential skills, and go beyond the classroom. Students engage in diverse activities, discover their talents, and nurture teamwork. We offer a vibrant range of clubs that encourage holistic growth through dynamic offerings.
+    </p>
+  </div>
+
+  <div class="clubs-row">
+    <div class="club-card">
+      <img src="images/mechanics.jpg" alt="Science & Maths Club">
+      <div class="club-card-content">
+        <h3>Science & Maths Club</h3>
+        <p>Science & Maths challenges can spark students’ interest and help them become future innovators and problem solvers.</p>
+      </div>
+    </div>
+    <div class="club-card">
+      <img src="images/club-writers.jpg" alt="Writers & Debaters">
+      <div class="club-card-content">
+        <h3>Writers & Debaters</h3>
+        <p>Students debate, write, and speak to develop communication and critical thinking skills, leading to articulate leaders.</p>
+      </div>
+    </div>
+    <div class="club-card">
+      <img src="images/club-arts.jpg" alt="Creative Arts Club">
+      <div class="club-card-content">
+        <h3>Creative Arts Club</h3>
+        <p>Our creative arts club provides a platform for students to showcase their talents in drama, dancing, music, and other art forms.</p>
+      </div>
+    </div>
+    <div class="club-card">
+      <img src="images/club-flora.jpg" alt="Flora Green Club">
+      <div class="club-card-content">
+        <h3>Flora Green Club</h3>
+        <p>Our creative arts club provides a platform for students to showcase their talents in drama, dancing, music, and other art forms.</p>
+      </div>
+    </div>
+  </div>
+
+  <section class="extra-curricular-section">
+    <h2>Extra-Curricular</h2>
+    <p>
+      Extra-curricular activities provide students with opportunities to explore interests, develop skills, expand their social circle, and learn from others in a fun and engaging way.
+    </p>
+    <div class="extra-icons-row">
+      <div class="extra-icon ucmas">
+        <i class="fas fa-brain"></i>
+        <span>UCMAS</span>
+      </div>
+      <div class="extra-icon coding">
+        <i class="fas fa-code"></i>
+        <span>Coding</span>
+      </div>
+      <div class="extra-icon taekwondo">
+        <i class="fas fa-child"></i>
+        <span>Taekwondo</span>
+      </div>
+      <div class="extra-icon music">
+        <i class="fas fa-music"></i>
+        <span>Music</span>
+      </div>
+      <div class="extra-icon ballet">
+        <i class="fas fa-child"></i>
+        <span>Ballet</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer bg-dark text-light py-5" style="margin-top:60px;">
+    <div class="container">
+      <div class="row">
+        <!-- Logo and Description -->
+        <div class="col-md-3 mb-4">
+          <img src="images/Logo white.png" alt="Mirekua Logo" class="mb-3" style="max-width: 120px;">
+          <h5 class="text-uppercase font-weight-bold mb-0">MIREKUA</h5>
+          <p class="mb-0">INTERNATIONAL<br>COMMUNITY SCHOOL</p>
+        </div>
+        <!-- Quick Navigation -->
+        <div class="col-md-3 mb-4">
+          <h6 class="text-uppercase mb-3">Quick Navigation</h6>
+          <div class="row">
+            <div class="col-6">
+              <ul class="list-unstyled">
+                <li><a href="#" class="text-light">About</a></li>
+                <li><a href="#" class="text-light">Academics</a></li>
+                <li><a href="#" class="text-light">Students</a></li>
+                <li><a href="#" class="text-light">Parents</a></li>
+              </ul>
+            </div>
+            <div class="col-6">
+              <ul class="list-unstyled">
+                <li><a href="#" class="text-light">News</a></li>
+                <li><a href="#" class="text-light">Events</a></li>
+                <li><a href="#" class="text-light">Admissions</a></li>
+                <li><a href="#" class="text-light">Contact</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <!-- Stay Connected -->
+        <div class="col-md-3 mb-4">
+          <h6 class="text-uppercase mb-3">Stay Connected</h6>
+          <ul class="list-unstyled">
+            <li><a href="#" class="text-light">Facebook</a></li>
+            <li><a href="#" class="text-light">Twitter</a></li>
+            <li><a href="#" class="text-light">Instagram</a></li>
+            <li><a href="#" class="text-light">Youtube</a></li>
+          </ul>
+        </div>
+        <!-- Get in Touch -->
+        <div class="col-md-3 mb-4">
+          <h6 class="text-uppercase mb-3">Get in Touch</h6>
+          <p class="mb-1">Sisi Mirekua Street, Opah<br>(Near Amasaman) Accra.</p>
+          <p class="mb-1">GW-02032246</p>
+          <p>0551477222, 0551443777</p>
+        </div>
+      </div>
+      <!-- Footer Bottom -->
+      <div class="row mt-4">
+        <div class="col text-center">
+          <small>&copy; <script>document.write(new Date().getFullYear());</script> by Mirekua International Community School</small>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts (if needed) -->
+  <script src="js/jquery.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+</body>
+</html>
