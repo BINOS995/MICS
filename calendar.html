@@ -38,7 +38,11 @@
       border-radius: 4px;
       transition: background 0.2s, color 0.2s;
       margin: 30px auto 0 auto;
-      display: block;
+      display: inline-block; /* Changed from block to inline-block */
+      width: auto;           /* Ensures button is only as wide as its content */
+      min-width: 160px;      /* Optional: set a minimum width if you want */
+      max-width: 220px;      /* Optional: set a maximum width */
+      text-align: center;
     }
     .calendar-btn:hover {
       background: #C09B2A;
@@ -111,7 +115,7 @@
             <div class="dropdown-menu custom-dropdown" aria-labelledby="micsExperienceDropdown">
               <a class="dropdown-item active" href="calendar.html">Academic Calendar</a>
               <a class="dropdown-item" href="students-policy.html">Student Policy</a>
-              <a class="dropdown-item" href="uniforms.html">Uniforms</a>
+              <a class="dropdown-item" href="uniforms.html">parent policy</a>
               <a class="dropdown-item" href="clubs.html">Clubs & Activities</a>
             </div>
           </li>
@@ -134,14 +138,141 @@
   <!-- END nav -->
 
   <div class="calendar-header">
-    <h1>EVENT CALENDAR</h1>
+    <h1>THIRD TERM ACADEMIC CALENDAR (2024/2025)</h1>
+    <h2 style="font-size:1.2rem; font-weight:400; margin-top:10px;">MON. 5<sup>TH</sup> MAY – FRI. 1<sup>ST</sup> AUGUST, 2025</h2>
   </div>
-  <div class="calendar-container">
-    <!-- Replace the src below with your actual Google Calendar embed link -->
-    <iframe src="https://calendar.google.com/calendar/embed?src=en.ghana%23holiday%40group.v.calendar.google.com&ctz=Africa%2FAccra"
-      style="border: 1px solid #C09B2A" width="500" height="350" frameborder="0" scrolling="no"></iframe>
-    <a href="calendar.ics" class="calendar-btn" download>Download Full Calendar</a>
+  <div class="calendar-container" style="display: flex; flex-direction: column; align-items: center;">
+    <div style="width: 100%; max-width: 950px; margin: 0 auto 32px auto;">
+      <table style="width: 100%; border-collapse: collapse; font-family: inherit; box-shadow: 0 2px 8px rgba(0,0,0,0.04); font-size:1rem;">
+        <thead>
+          <tr>
+            <th style="background: #FF4C5B; color: #fff; font-size: 1.2rem; font-weight: bold; padding: 12px 0; text-align: center; border-top-left-radius: 6px;">WEEKS</th>
+            <th style="background: #FFA800; color: #fff; font-size: 1.2rem; font-weight: bold; padding: 12px 0; text-align: center;">DATES</th>
+            <th style="background: #1C1F2C; color: #fff; font-size: 1.2rem; font-weight: bold; padding: 12px 0; text-align: center; border-top-right-radius: 6px;">ACTIVITIES</th>
+          </tr>
+        </thead>
+        <tbody style="background: #fff;">
+          <tr>
+            <td style="text-align:center; padding:10px;">1</td>
+            <td style="text-align:center; padding:10px;">5<sup>TH</sup> MAY – 9<sup>TH</sup> MAY</td>
+            <td style="padding:10px;">CLASS ACTIVITIES</td>
+          </tr>
+          <tr>
+            <td style="text-align:center; padding:10px;">2</td>
+            <td style="text-align:center; padding:10px;">12<sup>TH</sup> MAY – 16<sup>TH</sup> MAY</td>
+            <td style="padding:10px;">CLASS ACTIVITIES</td>
+          </tr>
+          <tr>
+            <td style="text-align:center; padding:10px;">3</td>
+            <td style="text-align:center; padding:10px;">19<sup>TH</sup> MAY – 23<sup>RD</sup> MAY</td>
+            <td style="padding:10px;">CLASS ACTIVITIES /<br>SUBMISSION OF MID-TERM EXAM QUESTIONS (MON)</td>
+          </tr>
+          <tr>
+            <td style="text-align:center; padding:10px;">4</td>
+            <td style="text-align:center; padding:10px;">26<sup>TH</sup> MAY – 30<sup>TH</sup> MAY</td>
+            <td style="padding:10px;">CLASS ACTIVITIES</td>
+          </tr>
+          <tr>
+            <td style="text-align:center; padding:10px;">5</td>
+            <td style="text-align:center; padding:10px;">2<sup>ND</sup> JUNE – 6<sup>TH</sup> JUNE</td>
+            <td style="padding:10px;">MID TERM EXAMS</td>
+          </tr>
+          <tr>
+            <td style="text-align:center; padding:10px;">6</td>
+            <td style="text-align:center; padding:10px;">9<sup>TH</sup> JUNE – 13<sup>TH</sup> JUNE</td>
+            <td style="padding:10px;">MID TERM BREAK (MON &amp; TUES)<br>INTERHOUSES SPORTS (WED)<br>STEM-ROBO DAY (THURS)<br>EXCURSION (FRI)</td>
+          </tr>
+          <tr>
+            <td style="text-align:center; padding:10px;">7</td>
+            <td style="text-align:center; padding:10px;">16<sup>TH</sup> JUNE – 20<sup>TH</sup> JUNE</td>
+            <td style="padding:10px;">CLASS ACTIVITIES<br>PROMOTIONAL CRITERIA (WED)</td>
+          </tr>
+          <tr>
+            <td style="text-align:center; padding:10px;">8</td>
+            <td style="text-align:center; padding:10px;">23<sup>RD</sup> JUNE – 27<sup>TH</sup> JUNE</td>
+            <td style="padding:10px;">CLASS ACTIVITIES<br>SUBMISSION OF FINAL EXAM QUESTIONS (WED)</td>
+          </tr>
+          <tr>
+            <td style="text-align:center; padding:10px;">9</td>
+            <td style="text-align:center; padding:10px;">30<sup>TH</sup> JUNE – 4<sup>TH</sup> JULY</td>
+            <td style="padding:10px;">CLASS ACTIVITIES</td>
+          </tr>
+          <tr>
+            <td style="text-align:center; padding:10px;">10</td>
+            <td style="text-align:center; padding:10px;">7<sup>TH</sup> JULY – 11<sup>TH</sup> JULY</td>
+            <td style="padding:10px;">CLASS ACTIVITIES</td>
+          </tr>
+          <tr>
+            <td style="text-align:center; padding:10px;">11</td>
+            <td style="text-align:center; padding:10px;">14<sup>TH</sup> JULY – 18<sup>TH</sup> JULY</td>
+            <td style="padding:10px;">REVISION WEEK</td>
+          </tr>
+          <tr>
+            <td style="text-align:center; padding:10px;">12</td>
+            <td style="text-align:center; padding:10px;">21<sup>ST</sup> JULY – 25<sup>TH</sup> JULY</td>
+            <td style="padding:10px;">EXAMINATION WEEK</td>
+          </tr>
+          <tr>
+            <td style="text-align:center; padding:10px;">13</td>
+            <td style="text-align:center; padding:10px;">28<sup>TH</sup> JULY – 1<sup>ST</sup> AUGUST</td>
+            <td style="padding:10px;">FINALS WEEK:<br>INTER-HOUSES SPORTS (WED)<br>MINI-GRADUATION / VACATION (FRI)</td>
+          </tr>
+        </tbody>
+      </table>
+      <!-- Recap of Important Dates -->
+      <div style="margin-top:32px; padding: 24px 18px; background: #f9f9f9; border-radius: 8px; border: 1px solid #eee;">
+        <h3 style="text-align:center; font-size:1.1rem; font-weight:700; letter-spacing:1px; margin-bottom:18px; color:#1C1F2C; text-decoration:underline;">RECAP OF IMPORTANT DATES</h3>
+        <table style="width:100%; border-collapse:collapse; font-size:1rem;">
+          <tbody>
+            <tr>
+              <td style="font-weight:600; padding:8px 0;">MID TERM EXAMS (MON – FRI)</td>
+              <td style="padding:8px 0;">2<sup>ND</sup> JUNE – 6<sup>TH</sup> JUNE, 2025</td>
+            </tr>
+            <tr>
+              <td style="font-weight:600; padding:8px 0;">FINAL EXAMINATIONS (MON – FRI)</td>
+              <td style="padding:8px 0;">21<sup>ST</sup> JULY – 25<sup>TH</sup> JULY, 2025</td>
+            </tr>
+            <tr>
+              <td style="font-weight:600; padding:8px 0;">MINI-GRADUATION / VACATION (FRI)</td>
+              <td style="padding:8px 0;">1<sup>ST</sup> AUGUST, 2025</td>
+            </tr>
+            <tr>
+              <td style="font-weight:600; padding:8px 0;">RE-OPEN (MON)</td>
+              <td style="padding:8px 0;">15<sup>TH</sup> SEPTEMBER, 2025</td>
+            </tr>
+            <tr>
+              <td style="font-weight:600; padding:8px 0;">NB:<br>VACATION CLASSES:</td>
+              <td style="padding:8px 0;">11<sup>TH</sup> AUG – 5<sup>TH</sup> SEPT, 2025 (4 WEEKS)</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+    <!-- End Academic Calendar Table and Recap -->
   </div>
+
+    <!-- Download button centered -->
+    <div style="width:100%; text-align:center;">
+      <button class="calendar-btn" id="download-pdf-btn">Download Full Calendar</button>
+    </div>
+  </div>
+
+  <!-- Add html2pdf.js from CDN before the closing </body> tag -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+  <script>
+    document.getElementById('download-pdf-btn').addEventListener('click', function () {
+      // Select the calendar container to export
+      var element = document.querySelector('.calendar-container > div');
+      var opt = {
+        margin:       0.3,
+        filename:     'MICS_Academic_Calendar.pdf',
+        image:        { type: 'jpeg', quality: 0.98 },
+        html2canvas:  { scale: 2 },
+        jsPDF:        { unit: 'in', format: 'a4', orientation: 'portrait' }
+      };
+      html2pdf().set(opt).from(element).save();
+    });
+  </script>
 
   <!-- Footer (copy from your index.html) -->
   <footer class="footer bg-dark text-light py-5" style="margin-top:60px;">
