@@ -10965,3 +10965,13 @@ ul li {
   touch-action: pan-y !important;
 } 
 
+.home-slider.owl-carousel {
+  max-height: 750px; /* or any height you want */
+  overflow: hidden;
+}
+.home-slider .slider-item {
+  height: 750px; /* match the max-height above */
+  background-size: cover;
+  background-position: center;
+}
+
