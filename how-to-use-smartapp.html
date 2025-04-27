@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>How to Use SmartApp for Learners and Parents</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <!-- Favicon -->
+  <link rel="icon" href="images/micslogo.png" type="image/x-icon">
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Poppins:400,500,600,700|Lato:400,700|Roboto:400,700&display=swap" rel="stylesheet">
+  <!-- Font Awesome for icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+  <!-- Your existing styles -->
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+    body {
+      font-family: 'Poppins', 'Lato', 'Roboto', sans-serif;
+      background: #f8fbff;
+      color: #1C1F2C;
+      margin: 0;
+      padding: 0;
+    }
+    .sticky-nav {
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      background: #fff;
+      box-shadow: 0 2px 8px rgba(28,31,44,0.04);
+      transition: box-shadow 0.2s;
+    }
+    .smartapp-hero {
+      background: linear-gradient(120deg, #7C0000 0%, #C09B2A 100%);
+      color: #fff;
+      padding: 60px 20px 40px 20px;
+      text-align: center;
+      border-radius: 0 0 32px 32px;
+      margin-bottom: 32px;
+      animation: fadeInDown 1s;
+    }
+    .smartapp-hero h1 {
+      font-size: 2.5rem;
+      font-weight: 700;
+      margin-bottom: 12px;
+    }
+    .smartapp-hero p {
+      font-size: 1.2rem;
+      font-weight: 400;
+      margin-bottom: 0;
+    }
+    .section-title {
+      font-size: 1.7rem;
+      font-weight: 600;
+      color: #7C0000;
+      margin-bottom: 18px;
+      text-align: center;
+    }
+    .steps-card h2 {
+      font-size: 1.2rem;
+      color: #C09B2A;
+      font-weight: 700;
+      margin-bottom: 10px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .steps-list i {
+      color: #C09B2A;
+      font-size: 1.3rem;
+      margin-top: 2px;
+      min-width: 22px;
+    }
+    .tip-card {
+      background: #FDF3ED;
+      border-radius: 12px;
+      padding: 18px 16px;
+      min-width: 180px;
+      flex: 1 1 180px;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      font-size: 1rem;
+      color: #E23145;
+      box-shadow: 0 1px 6px rgba(28,31,44,0.04);
+      font-weight: 500;
+    }
+    .tip-card i {
+      font-size: 1.5rem;
+      color: #C09B2A;
+    }
+    .video-section h2 {
+      color: #7C0000;
+      font-size: 1.3rem;
+      font-weight: 600;
+      margin-bottom: 18px;
+    }
+    .video-placeholder {
+      background: #FDF3ED;
+      color: #C09B2A;
+    }
+    .cta-btn {
+      background: #E23145;
+      color: #fff;
+      border: none;
+      border-radius: 32px;
+      font-size: 1.1rem;
+      font-weight: 600;
+      text-decoration: none;
+      transition: background 0.2s, color 0.2s;
+    }
+    .cta-btn:hover {
+      background: #C09B2A;
+      color: #1C1F2C;
+      transform: translateY(-2px) scale(1.03);
+    }
+    @media (max-width: 900px) {
+      .steps-container { flex-direction: column; gap: 0; }
+      .steps-card { margin-bottom: 24px; }
+      .quick-tips { flex-direction: column; gap: 14px; }
+    }
+    @keyframes fadeInUp {
+      from { opacity: 0; transform: translateY(40px);}
+      to { opacity: 1; transform: translateY(0);}
+    }
+    @keyframes fadeInDown {
+      from { opacity: 0; transform: translateY(-40px);}
+      to { opacity: 1; transform: translateY(0);}
+    }
+    html {
+      scroll-behavior: smooth;
+    }
+  </style>
+</head>
+<body>
+  <!-- Header/Navbar from index.html -->
+  <div class="topbar">
+    <div class="topbar-container">
+      <div class="topbar-left">
+        <a href="https://admin.smartsapp.com/auth/login" class="topbar-btn">Staff Login &rsaquo;</a>
+        <a href="https://admin.smartsapp.com/auth/login" class="topbar-btn">Email Login &rsaquo;</a>
+        <a href="https://admin.smartsapp.com/auth/login" class="topbar-btn">Student Login &rsaquo;</a>
+        <a href="careers.html" class="topbar-btn">Careers &rsaquo;</a>
+      </div>
+      <div class="topbar-center">
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-facebook"></i></a>
+        <a href="#"><i class="fab fa-tiktok"></i></a>
+      </div>
+      <div class="topbar-right">
+        <a href="contact.html" class="topbar-btn">Call Us &rsaquo;</a>
+      </div>
+    </div>
+  </div>
+  <nav class="navbar navbar-expand-lg ftco_navbar ftco-navbar-light custom-navbar" id="ftco-navbar">
+    <div class="container d-flex align-items-center justify-content-between">
+      <a class="navbar-brand d-flex align-items-center" href="index.html">
+        <img src="images/School Logo. png.png" alt="Mirekua Logo" class="navbar-logo">
+        <div class="school-name ml-2"></div>
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="oi oi-menu"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="ftco-nav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item active"><a href="index.html" class="nav-link">Home</a></li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="aboutDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">About</a>
+            <div class="dropdown-menu custom-dropdown" aria-labelledby="aboutDropdown">
+              <a class="dropdown-item" href="about.html">Our History</a>
+              <a class="dropdown-item" href="bod.html">Board of Directors</a>
+            </div>
+          </li>
+          <li class="nav-item"><a href="academics.html" class="nav-link">Academics</a></li>
+          <li class="nav-item dropdown active">
+            <a class="nav-link dropdown-toggle" href="admission.html" id="admissionsDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Admissions</a>
+            <div class="dropdown-menu custom-dropdown" aria-labelledby="admissionsDropdown">
+              <a class="dropdown-item" href="admission.html">Overview</a>
+              <a class="dropdown-item" href="apply-online.html">Apply Online</a>
+              <a class="dropdown-item" href="download-form.html">Download Form</a>
+            </div>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="mics-experience.html" id="micsExperienceDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">MiCS Experience</a>
+            <div class="dropdown-menu custom-dropdown" aria-labelledby="micsExperienceDropdown">
+              <a class="dropdown-item" href="calendar.html">Academic Calendar</a>
+              <a class="dropdown-item" href="students-policy.html">Student Policy</a>
+              <a class="dropdown-item" href="uniforms.html">Uniforms</a>
+              <a class="dropdown-item" href="clubs.html">Clubs & Activities</a>
+            </div>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="information.html" id="informationDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Information</a>
+            <div class="dropdown-menu custom-dropdown" aria-labelledby="informationDropdown">
+              <a class="dropdown-item" href="news.html">News</a>
+              <a class="dropdown-item" href="events.html">Events</a>
+              <a class="dropdown-item" href="announcements.html">Announcements</a>
+              <a class="dropdown-item" href="faqs.html">FAQs</a>
+            </div>
+          </li>
+          <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- END nav -->
+
+  <section class="smartapp-hero" id="intro">
+    <h1>How to Use SmartApp for Learners and Parents</h1>
+    <p>Welcome to SmartApp! Empowering parents and learners with easy access to school updates, homework, attendance, and direct communication—all in one place.</p>
+  </section>
+
+  <div class="section" id="for-parents">
+    <div class="section-title"><i class="fas fa-user-shield"></i> For Parents</div>
+    <ul class="steps-list">
+      <li><i class="fas fa-download"></i> <strong>Step 1:</strong> Download SmartApp from the <b>Google Play Store</b> or <b>Apple App Store</b>.</li>
+      <li><i class="fas fa-user-plus"></i> <strong>Step 2:</strong> Register as a Parent using your phone number and student details.</li>
+      <li><i class="fas fa-star"></i> <strong>Step 3:</strong> Explore features: <b>Attendance</b> tracking, <b>Homework</b> updates, and <b>Direct Communication</b> with teachers and school.</li>
+    </ul>
+  </div>
+
+  <div class="section" id="for-learners">
+    <div class="section-title"><i class="fas fa-user-graduate"></i> For Learners</div>
+    <ul class="steps-list">
+      <li><i class="fas fa-download"></i> <strong>Step 1:</strong> Download SmartApp from your device's app store.</li>
+      <li><i class="fas fa-user-plus"></i> <strong>Step 2:</strong> Register as a Student using your school ID or registration code.</li>
+      <li><i class="fas fa-book-open"></i> <strong>Step 3:</strong> Use SmartApp to join classes, check homework, and message your teachers.</li>
+    </ul>
+  </div>
+
+  <div class="section" id="quick-tips">
+    <div class="section-title"><i class="fas fa-lightbulb"></i> Quick Tips</div>
+    <div class="quick-tips">
+      <div class="tip-card"><i class="fas fa-lock"></i> Keep your login details safe</div>
+      <div class="tip-card"><i class="fas fa-bell"></i> Enable notifications for instant updates</div>
+      <div class="tip-card"><i class="fas fa-headset"></i> Contact support via the app for help</div>
+      <div class="tip-card"><i class="fas fa-sync-alt"></i> Update the app regularly for new features</div>
+    </div>
+  </div>
+
+  <div class="video-section" id="video">
+    <h2><i class="fas fa-play-circle"></i> Watch: How to Use SmartApp</h2>
+    <div class="video-placeholder">
+      <!-- Replace the src with your actual video link if available -->
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/D12uTdjCUDs" frameborder="0" allowfullscreen></iframe>
+
+    </div>
+  </div>
+
+  <div class="cta-section" id="download">
+    <a href="https://play.google.com/store/apps/details?id=com.smartsapp" class="cta-btn" target="_blank"><i class="fab fa-google-play"></i> Download on Play Store</a>
+    <a href="https://apps.apple.com/app/idYOUR_APP_ID" class="cta-btn" target="_blank"><i class="fab fa-apple"></i> Download on App Store</a>
+  </div>
+
+  <!-- Footer from index.html -->
+  <footer class="footer bg-dark text-light py-5">
+    <div class="container">
+      <div class="row">
+        <!-- Logo and Description -->
+        <div class="col-md-3 mb-4">
+          <img src="images/Logo white.png" alt="Mirekua Logo" class="mb-3" style="max-width: 120px;">
+          <h5 class="text-uppercase font-weight-bold mb-0">MIREKUA</h5>
+          <p class="mb-0">INTERNATIONAL<br>COMMUNITY SCHOOL</p>
+        </div>
+        <!-- Quick Navigation -->
+        <div class="col-md-3 mb-4">
+          <h6 class="text-uppercase mb-3">Quick Navigation</h6>
+          <div class="row">
+            <div class="col-6">
+              <ul class="list-unstyled">
+                <li><a href="#" class="text-light">About</a></li>
+                <li><a href="#" class="text-light">Academics</a></li>
+                <li><a href="#" class="text-light">Students</a></li>
+                <li><a href="#" class="text-light">Parents</a></li>
+              </ul>
+            </div>
+            <div class="col-6">
+              <ul class="list-unstyled">
+                <li><a href="#" class="text-light">News</a></li>
+                <li><a href="#" class="text-light">Events</a></li>
+                <li><a href="#" class="text-light">Admissions</a></li>
+                <li><a href="#" class="text-light">Contact</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <!-- Contact Info -->
+        <div class="col-md-3 mb-4">
+          <h6 class="text-uppercase mb-3">Contact</h6>
+          <ul class="list-unstyled">
+            <li><i class="fas fa-map-marker-alt"></i> School Address Here</li>
+            <li><i class="fas fa-phone"></i> +233 123 456 789</li>
+            <li><i class="fas fa-envelope"></i> info@mics.edu.gh</li>
+          </ul>
+        </div>
+        <!-- Social Links -->
+        <div class="col-md-3 mb-4">
+          <h6 class="text-uppercase mb-3">Connect</h6>
+          <a href="#" class="text-light mr-3"><i class="fab fa-facebook fa-lg"></i></a>
+          <a href="#" class="text-light mr-3"><i class="fab fa-instagram fa-lg"></i></a>
+          <a href="#" class="text-light"><i class="fab fa-tiktok fa-lg"></i></a>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12 text-center mt-3">
+          <small>&copy; 2024 Mirekua International Community School. All rights reserved.</small>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- End Footer -->
+
+  <!-- Smooth scroll for anchor links -->
+  <script>
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function(e) {
+        const target = document.querySelector(this.getAttribute('href'));
+        if(target) {
+          e.preventDefault();
+          target.scrollIntoView({ behavior: 'smooth' });
+        }
+      });
+    });
+  </script>
+</body>
+</html>
