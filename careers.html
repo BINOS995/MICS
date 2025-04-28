@@ -62,7 +62,7 @@
     <div class="topbar-container">
       <div class="topbar-left">
         <a href="https://admin.smartsapp.com/auth/login" class="topbar-btn">Staff Login &rsaquo;</a>
-        <a href="https://admin.smartsapp.com/auth/login" class="topbar-btn">Email Login &rsaquo;</a>
+        <a href="#" class="topbar-btn" onclick="event.preventDefault();showUnderConstructionPopup();">Email Login &rsaquo;</a>
         <a href="https://admin.smartsapp.com/auth/login" class="topbar-btn">Student Login &rsaquo;</a>
         <a href="careers.html" class="topbar-btn">Careers &rsaquo;</a>
       </div>
@@ -94,7 +94,7 @@
             </a>
             <div class="dropdown-menu custom-dropdown" aria-labelledby="aboutDropdown">
               <a class="dropdown-item" href="about.html">Our History</a>
-              <a class="dropdown-item" href="bod.html">Board of Directors</a>
+              <a class="dropdown-item" href="bod.html">Management</a>
             </div>
           </li>
           <li class="nav-item"><a href="academics.html" class="nav-link">Academics</a></li>
@@ -124,10 +124,66 @@
               Information
             </a>
             <div class="dropdown-menu custom-dropdown" aria-labelledby="informationDropdown">
-              <a class="dropdown-item" href="news.html">News</a>
-              <a class="dropdown-item" href="events.html">Events</a>
+               <nav class="navbar navbar-expand-lg ftco_navbar ftco-navbar-light custom-navbar" id="ftco-navbar">
+    <div class="container d-flex align-items-center justify-content-between">
+      <a class="navbar-brand d-flex align-items-center" href="index.html">
+        <img src="images/School Logo. png.png" alt="Mirekua Logo" class="navbar-logo">
+        <div class="school-name ml-2"></div>
+      </a>
+      <button class="navbar-toggler text-white" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="oi oi-menu"></span> Menu
+      </button>
+      <div class="collapse navbar-collapse" id="ftco-nav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="aboutDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              About
+            </a>
+            <div class="dropdown-menu custom-dropdown" aria-labelledby="aboutDropdown">
+              <a class="dropdown-item" href="about.html">Our History</a>
+              <a class="dropdown-item" href="bod.html">Management</a>
+            </div>
+          </li>
+          <li class="nav-item"><a href="academics.html" class="nav-link">Academics</a></li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="admission.html" id="admissionsDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Admissions
+            </a>
+            <div class="dropdown-menu custom-dropdown" aria-labelledby="admissionsDropdown">
+              <a class="dropdown-item" href="admission.html">Overview</a>
+              <a class="dropdown-item" href="apply-online.html">Apply Online</a>
+              <a class="dropdown-item" href="download-form.html">Download Form</a>
+            </div>
+          </li>
+          <li class="nav-item dropdown active">
+            <a class="nav-link dropdown-toggle" href="mics-experience.html" id="micsExperienceDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              MiCS Experience
+            </a>
+            <div class="dropdown-menu custom-dropdown" aria-labelledby="micsExperienceDropdown">
+              <a class="dropdown-item" href="calendar.html">Academic Calendar</a>
+              <a class="dropdown-item" href="students-policy.html">Student Policy</a>
+              <a class="dropdown-item active" href="uniforms.html">Parents Policy</a>
+              <a class="dropdown-item" href="clubs.html">Clubs & Activities</a>
+            </div>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="information.html" id="informationDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Information
+            </a>
+            <div class="dropdown-menu custom-dropdown" aria-labelledby="informationDropdown">
+              <a class="dropdown-item" href="no-content.html">News</a>
+              <a class="dropdown-item" href="no-content.html">Events</a>
               <a class="dropdown-item" href="announcements.html">Announcements</a>
               <a class="dropdown-item" href="faqs.html">FAQs</a>
+            </div>
+          </li>
+          <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- END nav -->
             </div>
           </li>
           <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
@@ -144,9 +200,36 @@
   </section>
 
   <!-- Careers Content Section -->
-  <section class="careers-content" >
-    There are currently no vacancies available. However, we are always keen to meet energetic and talented professionals who would like to join our team. If you wish to be considered for any future positions, please send your CV and covering letter to: 
-    <a href="mailto:Mirekuaics@gmail.com">Mirekuaics@gmail.com</a>
+  <section class="careers-content" style="background: #f8f9fa; border-radius: 18px; box-shadow: 0 4px 24px rgba(28,31,44,0.10); padding: 48px 24px 60px 24px; max-width: 700px; margin: -60px auto 40px auto;">
+    <div style="background: #fff; border-radius: 14px; box-shadow: 0 2px 8px rgba(124,0,0,0.06); padding: 32px 20px;">
+      <h2 style="color:#7C0000; font-weight:700; letter-spacing:1px; margin-bottom: 18px;">
+        <i class="fa-solid fa-briefcase" style="margin-right:10px; color:#7C0000;"></i>Job Vacancy
+      </h2>
+      <p style="font-size:1.13rem; color:#222; margin-bottom: 18px;">
+        Mirekua International Community School, located at Opah-Sapeiman, invites applications from qualified professionals for the following positions:
+      </p>
+      <ul style="text-align:left; max-width:420px; margin:0 auto 22px auto; font-size:1.08rem; color:#333; line-height:1.7;">
+        <li><i class="fa-solid fa-chalkboard-user" style="color:#7C0000; margin-right:7px;"></i>Preschool Facilitator</li>
+        <li><i class="fa-solid fa-book-open-reader" style="color:#7C0000; margin-right:7px;"></i>Literacy Facilitator</li>
+        <li><i class="fa-solid fa-calculator" style="color:#7C0000; margin-right:7px;"></i>Bursar / Accountant</li>
+      </ul>
+      <p style="font-weight:600; color:#1C1F2C; margin-bottom: 10px;">Minimum Qualifications:</p>
+      <ul style="text-align:left; max-width:420px; margin:0 auto 22px auto; font-size:1.05rem; color:#444; line-height:1.7;">
+        <li>A minimum of Degree or Diploma in Education or related field.</li>
+        <li>A minimum of one to two years of experience.</li>
+      </ul>
+      <div style="background:#f4eaea; border-radius:8px; padding:18px 12px; margin-top: 18px;">
+        <p style="margin-bottom: 8px; color:#7C0000; font-weight:600;">
+          <i class="fa-solid fa-envelope" style="margin-right:7px;"></i>
+          Send your application and CV to:
+        </p>
+        <a href="mailto:mirekuaics@gmail.com" style="color:#7C0000; font-weight:500; text-decoration:underline;">mirekuaics@gmail.com</a>
+        <span style="display:block; margin:10px 0 0 0; color:#222;">
+          or via WhatsApp:
+          <a href="tel:0551477222" style="color:#007bff; font-weight:500; text-decoration:underline;">0551477222</a>
+        </span>
+      </div>
+    </div>
   </section>
 
   <!-- Footer -->
@@ -211,5 +294,13 @@
   <!-- Scripts -->
   <script src="js/jquery.min.js"></script>
   <script src="js/bootstrap.min.js"></script>
+
+  <!-- Place this just before </body> in each HTML file -->
+<script>
+  fetch('under-construction-popup.html')
+    .then(response => response.text())
+    .then(html => document.body.insertAdjacentHTML('beforeend', html));
+</script>
+
 </body>
 </html>

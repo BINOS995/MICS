@@ -61,10 +61,9 @@
   <div class="topbar">
     <div class="topbar-container">
       <div class="topbar-left">
-        <a href="#" class="topbar-btn">Staff Login &rsaquo;</a>
-        <a href="#" class="topbar-btn">Email Login &rsaquo;</a>
-        <a href="#" class="topbar-btn">Student Login &rsaquo;</a>
-        <a href="#" class="topbar-btn">Careers &rsaquo;</a>
+        <a href="#" class="topbar-btn" onclick="event.preventDefault();showUnderConstructionPopup();">Email Login &rsaquo;</a>
+        <a href="https://admin.smartsapp.com/auth/login" class="topbar-btn">Staff/Student Login &rsaquo;</a>
+        <a href="careers.html" class="topbar-btn">Careers &rsaquo;</a>
       </div>
       <div class="topbar-center">
         <a href="#"><i class="fab fa-instagram"></i></a>
@@ -72,7 +71,7 @@
         <a href="#"><i class="fab fa-tiktok"></i></a>
       </div>
       <div class="topbar-right">
-        <a href="#" class="topbar-btn">Call Us &rsaquo;</a>
+        <a href="contact.html" class="topbar-btn">Call Us &rsaquo;</a>
       </div>
     </div>
   </div>
@@ -94,7 +93,7 @@
             </a>
             <div class="dropdown-menu custom-dropdown" aria-labelledby="aboutDropdown">
               <a class="dropdown-item" href="about.html">Our History</a>
-              <a class="dropdown-item" href="bod.html">Board of Directors</a>
+              <a class="dropdown-item" href="bod.html">Management</a>
             </div>
           </li>
           <li class="nav-item"><a href="academics.html" class="nav-link">Academics</a></li>
@@ -124,8 +123,8 @@
               Information
             </a>
             <div class="dropdown-menu custom-dropdown" aria-labelledby="informationDropdown">
-              <a class="dropdown-item" href="news.html">News</a>
-              <a class="dropdown-item" href="events.html">Events</a>
+              <a class="dropdown-item" href="no-content.html">News</a>
+              <a class="dropdown-item" href="no-content.html">Events</a>
               <a class="dropdown-item" href="announcements.html">Announcements</a>
               <a class="dropdown-item" href="faqs.html">FAQs</a>
             </div>
@@ -274,65 +273,23 @@
     });
   </script>
 
-  <!-- Footer (copy from your index.html) -->
-  <footer class="footer bg-dark text-light py-5" style="margin-top:60px;">
-    <div class="container">
-      <div class="row">
-        <!-- Logo and Description -->
-        <div class="col-md-3 mb-4">
-          <img src="images/Logo white.png" alt="Mirekua Logo" class="mb-3" style="max-width: 120px;">
-          <h5 class="text-uppercase font-weight-bold mb-0">MIREKUA</h5>
-          <p class="mb-0">INTERNATIONAL<br>COMMUNITY SCHOOL</p>
-        </div>
-        <!-- Quick Navigation -->
-        <div class="col-md-3 mb-4">
-          <h6 class="text-uppercase mb-3">Quick Navigation</h6>
-          <div class="row">
-            <div class="col-6">
-              <ul class="list-unstyled">
-                <li><a href="#" class="text-light">About</a></li>
-                <li><a href="#" class="text-light">Academics</a></li>
-                <li><a href="#" class="text-light">Students</a></li>
-                <li><a href="#" class="text-light">Parents</a></li>
-              </ul>
-            </div>
-            <div class="col-6">
-              <ul class="list-unstyled">
-                <li><a href="#" class="text-light">News</a></li>
-                <li><a href="#" class="text-light">Events</a></li>
-                <li><a href="#" class="text-light">Admissions</a></li>
-                <li><a href="#" class="text-light">Contact</a></li>
-              </ul>
-            </div>
-          </div>
-        </div>
-        <!-- Stay Connected -->
-        <div class="col-md-3 mb-4">
-          <h6 class="text-uppercase mb-3">Stay Connected</h6>
-          <ul class="list-unstyled">
-            <li><a href="#" class="text-light">Facebook</a></li>
-            <li><a href="#" class="text-light">Twitter</a></li>
-            <li><a href="#" class="text-light">Instagram</a></li>
-            <li><a href="#" class="text-light">Youtube</a></li>
-          </ul>
-        </div>
-        <!-- Get in Touch -->
-        <div class="col-md-3 mb-4">
-          <h6 class="text-uppercase mb-3">Get in Touch</h6>
-          <p class="mb-1">Sisi Mirekua Street, Opah<br>(Near Amasaman) Accra.</p>
-          <p class="mb-1">GW-02032246</p>
-          <p>0551477222, 0551443777</p>
-        </div>
-      </div>
-      <!-- Footer Bottom -->
-      <div class="row mt-4">
-        <div class="col text-center">
-          <small>&copy; <script>document.write(new Date().getFullYear());</script> by Mirekua International Community School</small>
-        </div>
-      </div>
+  <!-- Add this just before the closing </body> tag -->
+  <div id="underConstructionPopup" style="display:none;position:fixed;top:0;left:0;width:100vw;height:100vh;background:rgba(0,0,0,0.4);z-index:9999;justify-content:center;align-items:center;">
+    <div style="background:#fff3cd;color:#856404;border:2px solid #ffeeba;border-radius:10px;padding:32px 28px 24px 28px;max-width:350px;text-align:center;box-shadow:0 2px 16px rgba(0,0,0,0.12);position:relative;">
+      <button onclick="hideUnderConstructionPopup()" style="position:absolute;top:10px;right:16px;background:none;border:none;font-size:1.3rem;color:#856404;cursor:pointer;">&times;</button>
+      <i class="fa-solid fa-triangle-exclamation" style="font-size:2.5rem;color:#C09B2A;margin-bottom:16px;"></i>
+      <h2 style="margin:0 0 10px 0;font-size:1.3rem;color:#7C0000;">Feature Under Construction</h2>
+      <p style="margin:0;font-size:1.05rem;">This feature is currently under construction.<br>Please check back soon!</p>
     </div>
-  </footer>
-
+  </div>
+  <script>
+    function showUnderConstructionPopup() {
+      document.getElementById('underConstructionPopup').style.display = 'flex';
+    }
+    function hideUnderConstructionPopup() {
+      document.getElementById('underConstructionPopup').style.display = 'none';
+    }
+  </script>
   <!-- Scripts (if needed) -->
   <script src="js/jquery.min.js"></script>
   <script src="js/bootstrap.min.js"></script>

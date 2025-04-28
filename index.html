@@ -33,9 +33,9 @@
 	<div class="topbar">
 		<div class="topbar-container">
 		  <div class="topbar-left">
-			<a href="https://admin.smartsapp.com/auth/login" class="topbar-btn">Staff Login &rsaquo;</a>
-			<a href="https://admin.smartsapp.com/auth/login" class="topbar-btn">Email Login &rsaquo;</a>
-			<a href="https://admin.smartsapp.com/auth/login" class="topbar-btn">Student Login &rsaquo;</a>
+			
+			<a href="#" class="topbar-btn" onclick="event.preventDefault();showUnderConstructionPopup();">Email Login &rsaquo;</a>
+			<a href="https://admin.smartsapp.com/auth/login" class="topbar-btn">Staff/Student Login &rsaquo;</a>
 			<a href="careers.html" class="topbar-btn">Careers &rsaquo;</a>
 		  </div>
 		  <div class="topbar-center">
@@ -77,7 +77,7 @@
 				</a>
 				<div class="dropdown-menu custom-dropdown" aria-labelledby="aboutDropdown">
 				  <a class="dropdown-item" href="about.html">Our History</a>
-				  <a class="dropdown-item" href="bod.html">Board of Directors</a>
+				  <a class="dropdown-item" href="bod.html">Management</a>
 				</div>
 			  </li>
 	  
@@ -114,10 +114,10 @@
 				  Information
 				</a>
 				<div class="dropdown-menu custom-dropdown" aria-labelledby="informationDropdown">
-				  <a class="dropdown-item" href="news.html">News</a>
-				  <a class="dropdown-item" href="events.html">Events</a>
-				  <a class="dropdown-item" href="announcements.html">Announcements</a>
-				  <a class="dropdown-item" href="faqs.html">FAQs</a>
+					<a class="dropdown-item" href="no-content.html">News</a>
+					<a class="dropdown-item" href="no-content.html">Events</a>
+					<a class="dropdown-item" href="announcements.html">Announcements</a>
+					<a class="dropdown-item" href="faqs.html">FAQs</a>
 				</div>
 			  </li>
 			  <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
@@ -454,4 +454,23 @@
       document.getElementById('schoolModal').style.display = 'flex';
     };
   </script>
+</style>
+
+<!-- Place this just before </body> -->
+<div id="underConstructionPopup" style="display:none;position:fixed;top:0;left:0;width:100vw;height:100vh;background:rgba(0,0,0,0.4);z-index:9999;justify-content:center;align-items:center;">
+  <div style="background:#fff3cd;color:#856404;border:2px solid #ffeeba;border-radius:10px;padding:32px 28px 24px 28px;max-width:350px;text-align:center;box-shadow:0 2px 16px rgba(0,0,0,0.12);position:relative;">
+    <button onclick="hideUnderConstructionPopup()" style="position:absolute;top:10px;right:16px;background:none;border:none;font-size:1.3rem;color:#856404;cursor:pointer;">&times;</button>
+    <i class="fa-solid fa-triangle-exclamation" style="font-size:2.5rem;color:#C09B2A;margin-bottom:16px;"></i>
+    <h2 style="margin:0 0 10px 0;font-size:1.3rem;color:#7C0000;">Feature Under Construction</h2>
+    <p style="margin:0;font-size:1.05rem;">This feature is currently under construction.<br>Please check back soon!</p>
+  </div>
+</div>
+<script>
+  function showUnderConstructionPopup() {
+    document.getElementById('underConstructionPopup').style.display = 'flex';
+  }
+  function hideUnderConstructionPopup() {
+    document.getElementById('underConstructionPopup').style.display = 'none';
+  }
+</script>
 </style>

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Feature Under Construction</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <style>
+    .popup-overlay {
+      display: none;
+      position: fixed;
+      top: 0; left: 0; right: 0; bottom: 0;
+      background: rgba(0,0,0,0.4);
+      z-index: 9999;
+      justify-content: center;
+      align-items: center;
+    }
+    .popup-content {
+      background: #fff3cd;
+      color: #856404;
+      border: 2px solid #ffeeba;
+      border-radius: 10px;
+      padding: 32px 28px 24px 28px;
+      max-width: 350px;
+      text-align: center;
+      box-shadow: 0 2px 16px rgba(0,0,0,0.12);
+      position: relative;
+    }
+    .popup-content i {
+      font-size: 2.5rem;
+      color: #C09B2A;
+      margin-bottom: 16px;
+    }
+    .popup-close {
+      position: absolute;
+      top: 10px;
+      right: 16px;
+      background: none;
+      border: none;
+      font-size: 1.3rem;
+      color: #856404;
+      cursor: pointer;
+    }
+    .popup-content h2 {
+      margin: 0 0 10px 0;
+      font-size: 1.3rem;
+      color: #7C0000;
+    }
+    .popup-content p {
+      margin: 0;
+      font-size: 1.05rem;
+    }
+  </style>
+</head>
+<body>
+  <button onclick="showPopup()">Show Under Construction Popup</button>
+
+  <div class="popup-overlay" id="underConstructionPopup">
+    <div class="popup-content">
+      <button class="popup-close" onclick="hidePopup()">&times;</button>
+      <i class="fa-solid fa-triangle-exclamation"></i>
+      <h2>Feature Under Construction</h2>
+      <p>This feature is currently under construction.<br>Please check back soon!</p>
+    </div>
+  </div>
+
+  <script>
+    function showPopup() {
+      document.getElementById('underConstructionPopup').style.display = 'flex';
+    }
+    function hidePopup() {
+      document.getElementById('underConstructionPopup').style.display = 'none';
+    }
+  </script>
+</body>
+</html>
+<div id="underConstructionPopup" style="display:none;position:fixed;top:0;left:0;width:100vw;height:100vh;background:rgba(0,0,0,0.4);z-index:9999;justify-content:center;align-items:center;">
+  <div style="background:#fff3cd;color:#856404;border:2px solid #ffeeba;border-radius:10px;padding:32px 28px 24px 28px;max-width:350px;text-align:center;box-shadow:0 2px 16px rgba(0,0,0,0.12);position:relative;">
+    <button onclick="hideUnderConstructionPopup()" style="position:absolute;top:10px;right:16px;background:none;border:none;font-size:1.3rem;color:#856404;cursor:pointer;">&times;</button>
+    <i class="fa-solid fa-triangle-exclamation" style="font-size:2.5rem;color:#C09B2A;margin-bottom:16px;"></i>
+    <h2 style="margin:0 0 10px 0;font-size:1.3rem;color:#7C0000;">Feature Under Construction</h2>
+    <p style="margin:0;font-size:1.05rem;">This feature is currently under construction.<br>Please check back soon!</p>
+  </div>
+</div>
+<script>
+  function showUnderConstructionPopup() {
+    document.getElementById('underConstructionPopup').style.display = 'flex';
+  }
+  function hideUnderConstructionPopup() {
+    document.getElementById('underConstructionPopup').style.display = 'none';
+  }
+</script>
