@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Gallery - Mirekua International Community School</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="icon" href="images/micslogo.png" type="image/x-icon">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <style>
+    body { background: #f6fbfd; }
+    .gallery-header { text-align: center; margin-top: 40px; }
+    .gallery-header h1 { color: #E09B2A; font-size: 2.2rem; font-weight: 700; margin-bottom: 10px; text-transform: uppercase; }
+    .gallery-header p { color: #1C1F2C; font-size: 1.1rem; max-width: 700px; margin: 0 auto 20px auto; }
+    .tab-container { max-width: 1100px; margin: 40px auto 60px auto; padding: 0 16px; }
+    .tab-buttons { display: flex; gap: 18px; margin-bottom: 18px; flex-wrap: wrap; }
+    .tab-btn {
+      background: #fff;
+      color: #E09B2A;
+      border: 2px solid #E09B2A;
+      border-radius: 8px 8px 0 0;
+      padding: 10px 28px;
+      font-weight: 700;
+      cursor: pointer;
+      transition: background 0.2s, color 0.2s;
+      outline: none;
+    }
+    .tab-btn.active, .tab-btn:hover {
+      background: #E09B2A;
+      color: #fff;
+    }
+    .tab-content { display: none; animation: fadeIn 0.3s; }
+    .tab-content.active { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 24px; }
+    @keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
+    .gallery-card {
+      background: #fff;
+      border-radius: 12px;
+      box-shadow: 0 2px 12px rgba(28,31,44,0.08);
+      overflow: hidden;
+      cursor: pointer;
+      transition: transform 0.2s;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    .gallery-card:hover { transform: translateY(-6px) scale(1.03); box-shadow: 0 6px 24px rgba(28,31,44,0.13); }
+    .gallery-card img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+      border-top-left-radius: 12px;
+      border-top-right-radius: 12px;
+      background: #e0e0e0;
+    }
+    .gallery-card .caption {
+      padding: 12px 8px;
+      color: #7C0000;
+      font-weight: 600;
+      font-size: 1.01rem;
+      text-align: center;
+      width: 100%;
+    }
+    /* Lightbox styles */
+    .lightbox-modal {
+      display: none;
+      position: fixed;
+      z-index: 9999;
+      left: 0; top: 0; width: 100vw; height: 100vh;
+      background: rgba(28,31,44,0.85);
+      align-items: center;
+      justify-content: center;
+      animation: fadeIn 0.2s;
+    }
+    .lightbox-modal.active { display: flex; }
+    .lightbox-content {
+      background: #fff;
+      border-radius: 12px;
+      padding: 18px;
+      box-shadow: 0 6px 32px rgba(28,31,44,0.18);
+      max-width: 90vw;
+      max-height: 80vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      position: relative;
+    }
+    .lightbox-content img {
+      max-width: 80vw;
+      max-height: 60vh;
+      border-radius: 8px;
+      margin-bottom: 12px;
+    }
+    .lightbox-caption { color: #7C0000; font-weight: 600; text-align: center; }
+    .lightbox-close {
+      position: absolute;
+      top: 10px; right: 18px;
+      background: none;
+      border: none;
+      font-size: 2rem;
+      color: #E23145;
+      cursor: pointer;
+    }
+    @media (max-width: 700px) {
+      .gallery-header h1 { font-size: 1.5rem; }
+      .gallery-card img { height: 110px; }
+      .tab-btn { padding: 8px 12px; font-size: 0.95rem; }
+    }
+  </style>
+</head>
+<body>
+  <!-- Header/Navbar (copied from index.html) -->
+  <div class="topbar">
+    <div class="topbar-container">
+      <div class="topbar-left">
+        <a href="https://admin.smartsapp.com/auth/login" class="topbar-btn">Staff/Student Login &rsaquo;</a>
+        <a href="careers.html" class="topbar-btn">Careers &rsaquo;</a>
+      </div>
+      <div class="topbar-center">
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-facebook"></i></a>
+        <a href="#"><i class="fab fa-tiktok"></i></a>
+      </div>
+      <div class="topbar-right">
+        <a href="contact.html" class="topbar-btn">Call Us &rsaquo;</a>
+      </div>
+    </div>
+  </div>
+  <nav class="navbar navbar-expand-lg ftco_navbar ftco-navbar-light custom-navbar" id="ftco-navbar">
+    <div class="container d-flex align-items-center justify-content-between">
+  
+      <!-- Logo + School Name -->
+      <a class="navbar-brand d-flex align-items-center" href="index.html">
+        <img src="images/School Logo. png.png" alt="Mirekua Logo" class="navbar-logo">
+        <div class="school-name ml-2">
+          <!-- You can add the school name text here -->
+        </div>
+      </a>
+  
+      <!-- Toggle for mobile -->
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="oi oi-menu"></span>
+      </button>
+  
+      <!-- Nav Links -->
+      <div class="collapse navbar-collapse" id="ftco-nav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item "><a href="index.html" class="nav-link">Home</a></li>
+  
+          <!-- About Dropdown -->
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="aboutDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              About
+            </a>
+            <div class="dropdown-menu custom-dropdown" aria-labelledby="aboutDropdown">
+              <a class="dropdown-item" href="about.html">Our History</a>
+              <a class="dropdown-item" href="bod.html">Management</a>
+            </div>
+          </li>
+  
+          <li class="nav-item"><a href="academics.html" class="nav-link">Academics</a></li>
+  
+          <!-- Admissions Dropdown -->
+          <li class="nav-item dropdown ">
+            <a class="nav-link dropdown-toggle" href="admission.html" id="admissionsDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Admissions
+            </a>
+            <div class="dropdown-menu custom-dropdown" aria-labelledby="admissionsDropdown">
+              <a class="dropdown-item" href="admission.html">Overview</a>
+              <a class="dropdown-item" href="apply-online.html">Apply Online</a>
+              <a class="dropdown-item" href="download-form.html">Download Form</a>
+            </div>
+          </li>
+
+          <!-- MiCS Experience Dropdown -->
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="mics-experience.html" id="micsExperienceDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              MICS Experience
+            </a>
+            <div class="dropdown-menu custom-dropdown" aria-labelledby="micsExperienceDropdown">
+              
+              <a class="dropdown-item" href="students-policy.html">Student Policy</a>
+            
+              <a class="dropdown-item" href="uniforms.html">Parents Policy</a>
+              <a class="dropdown-item" href="UniformActive.html">Uniforms</a>
+              <a class="dropdown-item" href="clubs.html">Clubs & Activities</a>
+            </div>
+          </li>
+
+          <!-- Information Dropdown -->
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="information.html" id="informationDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Information
+            </a>
+            <div class="dropdown-menu custom-dropdown" aria-labelledby="informationDropdown">
+                <a class="dropdown-item" href="no-content.html">News</a>
+                <a class="dropdown-item" href="no-content.html">Events</a>
+                <a class="dropdown-item" href="gallery.html">Gallery</a>
+                <a class="dropdown-item" href="faqs2.html">FAQs</a>
+            </div>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="calendarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              calendar
+            </a>
+            <div class="dropdown-menu custom-dropdown" aria-labelledby="calendarDropdown">
+                <a class="dropdown-item" href="calendar.html">Academic Calender</a>
+                <a class="dropdown-item" href="Endofterm.html">End of Term Calendar</a>
+                <a class="dropdown-item" href="midterm.html">MID-TERM Calendar</a>
+                
+            </div>
+          </li>
+          <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+        </ul>
+      </div>
+      
+  </nav>
+
+  <div style="background: #fff3cd; color: #856404; border: 1px solid #ffeeba; padding: 18px; text-align: center; font-size: 1.2rem; font-weight: bold; margin-top: 10px;">
+    🚧 This page is currently under construction. Please check back soon! 🚧
+  </div>
+
+  <div class="gallery-header">
+    <h1>Gallery</h1>
+    <p>Explore moments and memories from Mirekua International Community School.</p>
+  </div>
+  <div class="tab-container">
+    <div class="tab-buttons">
+      <button class="tab-btn active" data-tab="micsCollage">MICS Collage</button>
+     
+      <button class="tab-btn" data-tab="events">Events</button>
+      <button class="tab-btn" data-tab="graduation">Graduation</button>
+     
+      <!-- Add more tab buttons as needed -->
+    </div>
+    <div id="micsCollage" class="tab-content active">
+      <div class="gallery-card" data-img="images/Event Collage 1.jpg" data-caption="Science Lab Fun">
+        <img src="images/Event Collage 1.jpg" alt="Science Lab Fun">
+        <div class="caption">MICS Gallery </div>
+      </div>
+      <div class="gallery-card" data-img="images/Event Collage 2.jpg" data-caption="Science Lab Fun">
+        <img src="images/Event Collage 2.jpg" alt="Science Lab Fun">
+        <div class="caption">2024 SPEECH & GIVING DAY </div>
+      </div>
+      <!-- Add more images for Student Life -->
+    </div>
+    <!--
+    <div id="events" class="tab-content">
+      <div class="gallery-card" data-img="images/gallery3.jpg" data-caption="Cultural Festival">
+        <img src="images/gallery3.jpg" alt="Cultural Festival">
+        <div class="caption">Cultural Festival</div>
+      </div>
+      <div class="gallery-card" data-img="images/gallery4.jpg" data-caption="Art Exhibition">
+        <img src="images/gallery4.jpg" alt="Art Exhibition">
+        <div class="caption">Art Exhibition</div>
+      </div>
+        -->
+      <!-- Add more images for Events -->
+    </div>
+  
+    <!--
+    <div id="graduation" class="tab-content">
+      <div class="gallery-card" data-img="images/gallery5.jpg" data-caption="Graduation Ceremony">
+        <img src="images/gallery5.jpg" alt="Graduation Ceremony">
+        <div class="caption">Graduation Ceremony</div>
+      </div>
+        -->
+      <!-- Add more images for Graduation -->
+    </div>
+    
+  </div>
+  <!-- Lightbox Modal -->
+  <div class="lightbox-modal" id="lightboxModal">
+    <div class="lightbox-content">
+      <button class="lightbox-close" onclick="closeLightbox()">&times;</button>
+      <div style="display: flex; gap: 10px; margin-bottom: 10px;">
+        <button id="zoomInBtn" style="font-size:1.3rem;">+</button>
+        <button id="zoomOutBtn" style="font-size:1.3rem;">-</button>
+        <button id="resetZoomBtn" style="font-size:1.1rem;">Reset</button>
+      </div>
+      <img id="lightboxImg" src="" alt="">
+      <div class="lightbox-caption" id="lightboxCaption"></div>
+    </div>
+  </div>
+  <!-- Footer (copied from index.html) -->
+  <footer class="footer" style="background: #1C1F2C; color: #fff; padding: 60px 0 30px 0; margin-top:60px;">
+    <div class="container">
+      <div class="row">
+        <!-- Logo and Description -->
+        <div class="col-md-3 mb-4">
+          <img src="images/Logo white.png" alt="Mirekua Logo" class="mb-3" style="max-width: 120px;">
+          <h5 class="text-uppercase font-weight-bold mb-0" style="color: #fff;">MIREKUA</h5>
+          <p class="mb-0" style="color: #fff;">INTERNATIONAL<br>COMMUNITY SCHOOL</p>
+        </div>
+        <!-- Quick Navigation -->
+        <div class="col-md-3 mb-4">
+          <h6 class="text-uppercase mb-3" style="color: #ffffff;">Quick Navigation</h6>
+          <div class="row">
+            <div class="col-6">
+              <ul class="list-unstyled">
+                <li><a href="about.html" class="text-light">About</a></li>
+                <li><a href="academics.html" class="text-light">Academics</a></li>
+                <li><a href="students-policy.html" class="text-light">Students</a></li>
+                <li><a href="clubs.html" class="text-light">Clubs</a></li>
+              </ul>
+            </div>
+            <div class="col-6">
+              <ul class="list-unstyled">
+                <li><a href="calendar.html" class="text-light">Calendar</a></li>
+                <li><a href="gallery.html" class="text-light">Gallery</a></li>
+                <li><a href="faqs.html" class="text-light">FAQs</a></li>
+                <li><a href="contact.html" class="text-light">Contact</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <!-- Contact Info -->
+        <div class="col-md-3 mb-4">
+          <h6 class="text-uppercase mb-3" style="color: #ffffff;">Contact</h6>
+          <ul class="list-unstyled">
+            <li><i class="fas fa-map-marker-alt mr-2"></i> 123 Main Street, City, Country</li>
+            <li><i class="fas fa-phone mr-2"></i> +233 123 456 789</li>
+            <li><i class="fas fa-envelope mr-2"></i> info@mirekuaics.edu.gh</li>
+          </ul>
+        </div>
+        <!-- Social Media -->
+        <div class="col-md-3 mb-4">
+          <h6 class="text-uppercase mb-3" style="color: #ffffff;">Follow Us</h6>
+          <a href="#" class="text-light mr-3"><i class="fab fa-facebook fa-lg"></i></a>
+          <a href="#" class="text-light mr-3"><i class="fab fa-instagram fa-lg"></i></a>
+          <a href="#" class="text-light"><i class="fab fa-tiktok fa-lg"></i></a>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12 text-center mt-3">
+          <small>&copy; 2024 Mirekua International Community School. All rights reserved.</small>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // Tab switching
+    document.querySelectorAll('.tab-btn').forEach(btn => {
+      btn.addEventListener('click', function() {
+        document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
+        document.querySelectorAll('.tab-content').forEach(tc => tc.classList.remove('active'));
+        btn.classList.add('active');
+        document.getElementById(btn.getAttribute('data-tab')).classList.add('active');
+      });
+    });
+    // Lightbox functionality
+    document.querySelectorAll('.gallery-card').forEach(card => {
+      card.addEventListener('click', function() {
+        document.getElementById('lightboxImg').src = card.getAttribute('data-img');
+        document.getElementById('lightboxCaption').textContent = card.getAttribute('data-caption');
+        document.getElementById('lightboxModal').classList.add('active');
+      });
+    });
+    // Zoom functionality
+    let zoomLevel = 1;
+    const lightboxImg = document.getElementById('lightboxImg');
+    document.getElementById('zoomInBtn').onclick = function(e) {
+      e.stopPropagation();
+      zoomLevel += 0.2;
+      lightboxImg.style.transform = `scale(${zoomLevel})`;
+    };
+    document.getElementById('zoomOutBtn').onclick = function(e) {
+      e.stopPropagation();
+      zoomLevel = Math.max(0.2, zoomLevel - 0.2);
+      lightboxImg.style.transform = `scale(${zoomLevel})`;
+    };
+    document.getElementById('resetZoomBtn').onclick = function(e) {
+      e.stopPropagation();
+      zoomLevel = 1;
+      lightboxImg.style.transform = `scale(1)`;
+    };
+    // Reset zoom when opening/closing
+    document.querySelectorAll('.gallery-card').forEach(card => {
+      card.addEventListener('click', function() {
+        zoomLevel = 1;
+        lightboxImg.style.transform = `scale(1)`;
+      });
+    });
+    function closeLightbox() {
+      document.getElementById('lightboxModal').classList.remove('active');
+      document.getElementById('lightboxImg').src = '';
+      document.getElementById('lightboxCaption').textContent = '';
+      zoomLevel = 1;
+      lightboxImg.style.transform = `scale(1)`;
+    }
+    // Close lightbox on outside click
+    document.getElementById('lightboxModal').addEventListener('click', function(e) {
+      if (e.target === this) closeLightbox();
+    });
+    // Optional: Close on ESC key
+    document.addEventListener('keydown', function(e) {
+      if (e.key === 'Escape') closeLightbox();
+    });
+  </script>
+</body>
+</html>

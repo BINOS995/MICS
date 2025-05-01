@@ -46,9 +46,7 @@ body {
   min-height: 100vh;
   /* touch-action: manipulation; */
 }
-.overlay {
-  /* pointer-events: none; */
-}
+
 
 
 *,
