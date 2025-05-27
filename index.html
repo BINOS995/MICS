@@ -462,13 +462,59 @@
         Best wishes for a productive and inspiring term ahead.
       </div>
     </div>
+<style>
+#schoolModal {
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.4s cubic-bezier(.4,0,.2,1);
+  display: flex;
+  position: fixed;
+  <div class="modal-content" style="background:#fff;border-radius:18px;box-shadow:0 4px 32px rgba(0,0,0,0.18);padding:0;max-width:420px;width:90vw;position:relative;overflow:hidden;">
+    <button id="closeModalBtn" style="position:absolute;top:16px;right:16px;background:none;border:2px solid #1976d2;border-radius:8px;width:40px;height:40px;display:flex;align-items:center;justify-content:center;font-size:2rem;color:#E23145;cursor:pointer;z-index:2;transition:background 0.2s;">
+      &times;
+    </button>
+    <img src="images/vacation-flier.jpeg" alt="Vacation Classes Flier" style="display:block;width:100%;height:auto;border-radius:16px;" />
   </div>
-  <script>
-    // Show modal on page load
-    window.onload = function() {
-      document.getElementById('schoolModal').style.display = 'flex';
-    };
-  </script>
+</div>
+<script>
+window.addEventListener('DOMContentLoaded', function() {
+  var modal = document.getElementById('schoolModal');
+  if (modal) {
+    modal.classList.add('active');
+    var closeBtn = document.getElementById('closeModalBtn');
+    if (closeBtn) {
+      closeBtn.onclick = function() {
+        modal.classList.remove('active');
+      };
+    }
+  }
+});
+</script>
+
+</style>
+</body>
+</html>
+
+<!-- Add this CSS just before </head> or in your style.css for button color -->
+<style>
+  .btn,
+  .hero-btn,
+  .info-button {
+    background: #E23145 !important;
+    color: #fff !important;
+    border: none;
+    font-weight: 600;
+    transition: background 0.2s, color 0.2s;
+  }
+  .btn:hover,
+  .hero-btn:hover,
+  .info-button:hover {
+    background: #C09B2A !important;
+    color: #1C1F2C !important;
+  }
+</style>
+
+ 
 </style>
 
 <!-- Place this just before </body> -->
@@ -489,3 +535,680 @@
   }
 </script>
 </style>
+</body>
+</html>
+
+<!-- Add this CSS just before </head> or in your style.css for button color -->
+<style>
+  .btn,
+  .hero-btn,
+  .info-button {
+    background: #E23145 !important;
+    color: #fff !important;
+    border: none;
+    font-weight: 600;
+    transition: background 0.2s, color 0.2s;
+  }
+  .btn:hover,
+  .hero-btn:hover,
+  .info-button:hover {
+    background: #C09B2A !important;
+    color: #1C1F2C !important;
+  }
+</style>
+
+ 
+</style>
+
+<!-- Place this just before </body> -->
+<div id="underConstructionPopup" style="display:none;position:fixed;top:0;left:0;width:100vw;height:100vh;background:rgba(0,0,0,0.4);z-index:9999;justify-content:center;align-items:center;">
+  <div style="background:#fff3cd;color:#856404;border:2px solid #ffeeba;border-radius:10px;padding:32px 28px 24px 28px;max-width:350px;text-align:center;box-shadow:0 2px 16px rgba(0,0,0,0.12);position:relative;">
+    <button onclick="hideUnderConstructionPopup()" style="position:absolute;top:10px;right:16px;background:none;border:none;font-size:1.3rem;color:#856404;cursor:pointer;">&times;</button>
+    <i class="fa-solid fa-triangle-exclamation" style="font-size:2.5rem;color:#C09B2A;margin-bottom:16px;"></i>
+    <h2 style="margin:0 0 10px 0;font-size:1.3rem;color:#7C0000;">Feature Under Construction</h2>
+    <p style="margin:0;font-size:1.05rem;">This feature is currently under construction.<br>Please check back soon!</p>
+  </div>
+</div>
+<script>
+  function showUnderConstructionPopup() {
+    document.getElementById('underConstructionPopup').style.display = 'flex';
+  }
+  function hideUnderConstructionPopup() {
+    document.getElementById('underConstructionPopup').style.display = 'none';
+  }
+</script>
+</style>
+
+</body>
+</html>
+
+<!-- Add this CSS just before </head> or in your style.css for button color -->
+<style>
+  .btn,
+  .hero-btn,
+  .info-button {
+    background: #E23145 !important;
+    color: #fff !important;
+    border: none;
+    font-weight: 600;
+    transition: background 0.2s, color 0.2s;
+  }
+  .btn:hover,
+  .hero-btn:hover,
+  .info-button:hover {
+    background: #C09B2A !important;
+    color: #1C1F2C !important;
+  }
+</style>
+
+ 
+</style>
+
+<!-- Place this just before </body> -->
+<div id="underConstructionPopup" style="display:none;position:fixed;top:0;left:0;width:100vw;height:100vh;background:rgba(0,0,0,0.4);z-index:9999;justify-content:center;align-items:center;">
+  <div style="background:#fff3cd;color:#856404;border:2px solid #ffeeba;border-radius:10px;padding:32px 28px 24px 28px;max-width:350px;text-align:center;box-shadow:0 2px 16px rgba(0,0,0,0.12);position:relative;">
+    <button onclick="hideUnderConstructionPopup()" style="position:absolute;top:10px;right:16px;background:none;border:none;font-size:1.3rem;color:#856404;cursor:pointer;">&times;</button>
+    <i class="fa-solid fa-triangle-exclamation" style="font-size:2.5rem;color:#C09B2A;margin-bottom:16px;"></i>
+    <h2 style="margin:0 0 10px 0;font-size:1.3rem;color:#7C0000;">Feature Under Construction</h2>
+    <p style="margin:0;font-size:1.05rem;">This feature is currently under construction.<br>Please check back soon!</p>
+  </div>
+</div>
+<script>
+  function showUnderConstructionPopup() {
+    document.getElementById('underConstructionPopup').style.display = 'flex';
+  }
+  function hideUnderConstructionPopup() {
+    document.getElementById('underConstructionPopup').style.display = 'none';
+  }
+</script>
+</style>
+</body>
+</html>
+
+<!-- Add this CSS just before </head> or in your style.css for button color -->
+<style>
+  .btn,
+  .hero-btn,
+  .info-button {
+    background: #E23145 !important;
+    color: #fff !important;
+    border: none;
+    font-weight: 600;
+    transition: background 0.2s, color 0.2s;
+  }
+  .btn:hover,
+  .hero-btn:hover,
+  .info-button:hover {
+    background: #C09B2A !important;
+    color: #1C1F2C !important;
+  }
+</style>
+
+ 
+</style>
+
+<!-- Place this just before </body> -->
+<div id="underConstructionPopup" style="display:none;position:fixed;top:0;left:0;width:100vw;height:100vh;background:rgba(0,0,0,0.4);z-index:9999;justify-content:center;align-items:center;">
+  <div style="background:#fff3cd;color:#856404;border:2px solid #ffeeba;border-radius:10px;padding:32px 28px 24px 28px;max-width:350px;text-align:center;box-shadow:0 2px 16px rgba(0,0,0,0.12);position:relative;">
+    <button onclick="hideUnderConstructionPopup()" style="position:absolute;top:10px;right:16px;background:none;border:none;font-size:1.3rem;color:#856404;cursor:pointer;">&times;</button>
+    <i class="fa-solid fa-triangle-exclamation" style="font-size:2.5rem;color:#C09B2A;margin-bottom:16px;"></i>
+    <h2 style="margin:0 0 10px 0;font-size:1.3rem;color:#7C0000;">Feature Under Construction</h2>
+    <p style="margin:0;font-size:1.05rem;">This feature is currently under construction.<br>Please check back soon!</p>
+  </div>
+</div>
+<script>
+  function showUnderConstructionPopup() {
+    document.getElementById('underConstructionPopup').style.display = 'flex';
+  }
+  function hideUnderConstructionPopup() {
+    document.getElementById('underConstructionPopup').style.display = 'none';
+  }
+</script>
+</style>
+</body>
+</html>
+
+<!-- Add this CSS just before </head> or in your style.css for button color -->
+<style>
+  .btn,
+  .hero-btn,
+  .info-button {
+    background: #E23145 !important;
+    color: #fff !important;
+    border: none;
+    font-weight: 600;
+    transition: background 0.2s, color 0.2s;
+  }
+  .btn:hover,
+  .hero-btn:hover,
+  .info-button:hover {
+    background: #C09B2A !important;
+    color: #1C1F2C !important;
+  }
+</style>
+
+ 
+</style>
+
+<!-- Place this just before </body> -->
+<div id="underConstructionPopup" style="display:none;position:fixed;top:0;left:0;width:100vw;height:100vh;background:rgba(0,0,0,0.4);z-index:9999;justify-content:center;align-items:center;">
+  <div style="background:#fff3cd;color:#856404;border:2px solid #ffeeba;border-radius:10px;padding:32px 28px 24px 28px;max-width:350px;text-align:center;box-shadow:0 2px 16px rgba(0,0,0,0.12);position:relative;">
+    <button onclick="hideUnderConstructionPopup()" style="position:absolute;top:10px;right:16px;background:none;border:none;font-size:1.3rem;color:#856404;cursor:pointer;">&times;</button>
+    <i class="fa-solid fa-triangle-exclamation" style="font-size:2.5rem;color:#C09B2A;margin-bottom:16px;"></i>
+    <h2 style="margin:0 0 10px 0;font-size:1.3rem;color:#7C0000;">Feature Under Construction</h2>
+    <p style="margin:0;font-size:1.05rem;">This feature is currently under construction.<br>Please check back soon!</p>
+  </div>
+</div>
+<script>
+  function showUnderConstructionPopup() {
+    document.getElementById('underConstructionPopup').style.display = 'flex';
+  }
+  function hideUnderConstructionPopup() {
+    document.getElementById('underConstructionPopup').style.display = 'none';
+  }
+</script>
+</style>
+</body>
+</html>
+
+<!-- Add this CSS just before </head> or in your style.css for button color -->
+<style>
+  .btn,
+  .hero-btn,
+  .info-button {
+    background: #E23145 !important;
+    color: #fff !important;
+    border: none;
+    font-weight: 600;
+    transition: background 0.2s, color 0.2s;
+  }
+  .btn:hover,
+  .hero-btn:hover,
+  .info-button:hover {
+    background: #C09B2A !important;
+    color: #1C1F2C !important;
+  }
+</style>
+
+ 
+</style>
+
+<!-- Place this just before </body> -->
+<div id="underConstructionPopup" style="display:none;position:fixed;top:0;left:0;width:100vw;height:100vh;background:rgba(0,0,0,0.4);z-index:9999;justify-content:center;align-items:center;">
+  <div style="background:#fff3cd;color:#856404;border:2px solid #ffeeba;border-radius:10px;padding:32px 28px 24px 28px;max-width:350px;text-align:center;box-shadow:0 2px 16px rgba(0,0,0,0.12);position:relative;">
+    <button onclick="hideUnderConstructionPopup()" style="position:absolute;top:10px;right:16px;background:none;border:none;font-size:1.3rem;color:#856404;cursor:pointer;">&times;</button>
+    <i class="fa-solid fa-triangle-exclamation" style="font-size:2.5rem;color:#C09B2A;margin-bottom:16px;"></i>
+    <h2 style="margin:0 0 10px 0;font-size:1.3rem;color:#7C0000;">Feature Under Construction</h2>
+    <p style="margin:0;font-size:1.05rem;">This feature is currently under construction.<br>Please check back soon!</p>
+  </div>
+</div>
+<script>
+  function showUnderConstructionPopup() {
+    document.getElementById('underConstructionPopup').style.display = 'flex';
+  }
+  function hideUnderConstructionPopup() {
+    document.getElementById('underConstructionPopup').style.display = 'none';
+  }
+</script>
+</style>
+</body>
+</html>
+
+<!-- Add this CSS just before </head> or in your style.css for button color -->
+<style>
+  .btn,
+  .hero-btn,
+  .info-button {
+    background: #E23145 !important;
+    color: #fff !important;
+    border: none;
+    font-weight: 600;
+    transition: background 0.2s, color 0.2s;
+  }
+  .btn:hover,
+  .hero-btn:hover,
+  .info-button:hover {
+    background: #C09B2A !important;
+    color: #1C1F2C !important;
+  }
+</style>
+
+ 
+</style>
+
+<!-- Place this just before </body> -->
+<div id="underConstructionPopup" style="display:none;position:fixed;top:0;left:0;width:100vw;height:100vh;background:rgba(0,0,0,0.4);z-index:9999;justify-content:center;align-items:center;">
+  <div style="background:#fff3cd;color:#856404;border:2px solid #ffeeba;border-radius:10px;padding:32px 28px 24px 28px;max-width:350px;text-align:center;box-shadow:0 2px 16px rgba(0,0,0,0.12);position:relative;">
+    <button onclick="hideUnderConstructionPopup()" style="position:absolute;top:10px;right:16px;background:none;border:none;font-size:1.3rem;color:#856404;cursor:pointer;">&times;</button>
+    <i class="fa-solid fa-triangle-exclamation" style="font-size:2.5rem;color:#C09B2A;margin-bottom:16px;"></i>
+    <h2 style="margin:0 0 10px 0;font-size:1.3rem;color:#7C0000;">Feature Under Construction</h2>
+    <p style="margin:0;font-size:1.05rem;">This feature is currently under construction.<br>Please check back soon!</p>
+  </div>
+</div>
+<script>
+  function showUnderConstructionPopup() {
+    document.getElementById('underConstructionPopup').style.display = 'flex';
+  }
+  function hideUnderConstructionPopup() {
+    document.getElementById('underConstructionPopup').style.display = 'none';
+  }
+</script>
+</style>
+</body>
+</html>
+
+<!-- Add this CSS just before </head> or in your style.css for button color -->
+<style>
+  .btn,
+  .hero-btn,
+  .info-button {
+    background: #E23145 !important;
+    color: #fff !important;
+    border: none;
+    font-weight: 600;
+    transition: background 0.2s, color 0.2s;
+  }
+  .btn:hover,
+  .hero-btn:hover,
+  .info-button:hover {
+    background: #C09B2A !important;
+    color: #1C1F2C !important;
+  }
+</style>
+
+ 
+</style>
+
+<!-- Place this just before </body> -->
+<div id="underConstructionPopup" style="display:none;position:fixed;top:0;left:0;width:100vw;height:100vh;background:rgba(0,0,0,0.4);z-index:9999;justify-content:center;align-items:center;">
+  <div style="background:#fff3cd;color:#856404;border:2px solid #ffeeba;border-radius:10px;padding:32px 28px 24px 28px;max-width:350px;text-align:center;box-shadow:0 2px 16px rgba(0,0,0,0.12);position:relative;">
+    <button onclick="hideUnderConstructionPopup()" style="position:absolute;top:10px;right:16px;background:none;border:none;font-size:1.3rem;color:#856404;cursor:pointer;">&times;</button>
+    <i class="fa-solid fa-triangle-exclamation" style="font-size:2.5rem;color:#C09B2A;margin-bottom:16px;"></i>
+    <h2 style="margin:0 0 10px 0;font-size:1.3rem;color:#7C0000;">Feature Under Construction</h2>
+    <p style="margin:0;font-size:1.05rem;">This feature is currently under construction.<br>Please check back soon!</p>
+  </div>
+</div>
+<script>
+  function showUnderConstructionPopup() {
+    document.getElementById('underConstructionPopup').style.display = 'flex';
+  }
+  function hideUnderConstructionPopup() {
+    document.getElementById('underConstructionPopup').style.display = 'none';
+  }
+</script>
+</style>
+</body>
+</html>
+
+<!-- Add this CSS just before </head> or in your style.css for button color -->
+<style>
+  .btn,
+  .hero-btn,
+  .info-button {
+    background: #E23145 !important;
+    color: #fff !important;
+    border: none;
+    font-weight: 600;
+    transition: background 0.2s, color 0.2s;
+  }
+  .btn:hover,
+  .hero-btn:hover,
+  .info-button:hover {
+    background: #C09B2A !important;
+    color: #1C1F2C !important;
+  }
+</style>
+
+ 
+</style>
+
+<!-- Place this just before </body> -->
+<div id="underConstructionPopup" style="display:none;position:fixed;top:0;left:0;width:100vw;height:100vh;background:rgba(0,0,0,0.4);z-index:9999;justify-content:center;align-items:center;">
+  <div style="background:#fff3cd;color:#856404;border:2px solid #ffeeba;border-radius:10px;padding:32px 28px 24px 28px;max-width:350px;text-align:center;box-shadow:0 2px 16px rgba(0,0,0,0.12);position:relative;">
+    <button onclick="hideUnderConstructionPopup()" style="position:absolute;top:10px;right:16px;background:none;border:none;font-size:1.3rem;color:#856404;cursor:pointer;">&times;</button>
+    <i class="fa-solid fa-triangle-exclamation" style="font-size:2.5rem;color:#C09B2A;margin-bottom:16px;"></i>
+    <h2 style="margin:0 0 10px 0;font-size:1.3rem;color:#7C0000;">Feature Under Construction</h2>
+    <p style="margin:0;font-size:1.05rem;">This feature is currently under construction.<br>Please check back soon!</p>
+  </div>
+</div>
+<script>
+  function showUnderConstructionPopup() {
+    document.getElementById('underConstructionPopup').style.display = 'flex';
+  }
+  function hideUnderConstructionPopup() {
+    document.getElementById('underConstructionPopup').style.display = 'none';
+  }
+</script>
+</style>
+</body>
+</html>
+
+<!-- Add this CSS just before </head> or in your style.css for button color -->
+<style>
+  .btn,
+  .hero-btn,
+  .info-button {
+    background: #E23145 !important;
+    color: #fff !important;
+    border: none;
+    font-weight: 600;
+    transition: background 0.2s, color 0.2s;
+  }
+  .btn:hover,
+  .hero-btn:hover,
+  .info-button:hover {
+    background: #C09B2A !important;
+    color: #1C1F2C !important;
+  }
+</style>
+
+ 
+</style>
+
+<!-- Place this just before </body> -->
+<div id="underConstructionPopup" style="display:none;position:fixed;top:0;left:0;width:100vw;height:100vh;background:rgba(0,0,0,0.4);z-index:9999;justify-content:center;align-items:center;">
+  <div style="background:#fff3cd;color:#856404;border:2px solid #ffeeba;border-radius:10px;padding:32px 28px 24px 28px;max-width:350px;text-align:center;box-shadow:0 2px 16px rgba(0,0,0,0.12);position:relative;">
+    <button onclick="hideUnderConstructionPopup()" style="position:absolute;top:10px;right:16px;background:none;border:none;font-size:1.3rem;color:#856404;cursor:pointer;">&times;</button>
+    <i class="fa-solid fa-triangle-exclamation" style="font-size:2.5rem;color:#C09B2A;margin-bottom:16px;"></i>
+    <h2 style="margin:0 0 10px 0;font-size:1.3rem;color:#7C0000;">Feature Under Construction</h2>
+    <p style="margin:0;font-size:1.05rem;">This feature is currently under construction.<br>Please check back soon!</p>
+  </div>
+</div>
+<script>
+  function showUnderConstructionPopup() {
+    document.getElementById('underConstructionPopup').style.display = 'flex';
+  }
+  function hideUnderConstructionPopup() {
+    document.getElementById('underConstructionPopup').style.display = 'none';
+  }
+</script>
+</style>
+</body>
+</html>
+
+<!-- Add this CSS just before </head> or in your style.css for button color -->
+<style>
+  .btn,
+  .hero-btn,
+  .info-button {
+    background: #E23145 !important;
+    color: #fff !important;
+    border: none;
+    font-weight: 600;
+    transition: background 0.2s, color 0.2s;
+  }
+  .btn:hover,
+  .hero-btn:hover,
+  .info-button:hover {
+    background: #C09B2A !important;
+    color: #1C1F2C !important;
+  }
+</style>
+
+ 
+</style>
+
+<!-- Place this just before </body> -->
+<div id="underConstructionPopup" style="display:none;position:fixed;top:0;left:0;width:100vw;height:100vh;background:rgba(0,0,0,0.4);z-index:9999;justify-content:center;align-items:center;">
+  <div style="background:#fff3cd;color:#856404;border:2px solid #ffeeba;border-radius:10px;padding:32px 28px 24px 28px;max-width:350px;text-align:center;box-shadow:0 2px 16px rgba(0,0,0,0.12);position:relative;">
+    <button onclick="hideUnderConstructionPopup()" style="position:absolute;top:10px;right:16px;background:none;border:none;font-size:1.3rem;color:#856404;cursor:pointer;">&times;</button>
+    <i class="fa-solid fa-triangle-exclamation" style="font-size:2.5rem;color:#C09B2A;margin-bottom:16px;"></i>
+    <h2 style="margin:0 0 10px 0;font-size:1.3rem;color:#7C0000;">Feature Under Construction</h2>
+    <p style="margin:0;font-size:1.05rem;">This feature is currently under construction.<br>Please check back soon!</p>
+  </div>
+</div>
+<script>
+  function showUnderConstructionPopup() {
+    document.getElementById('underConstructionPopup').style.display = 'flex';
+  }
+  function hideUnderConstructionPopup() {
+    document.getElementById('underConstructionPopup').style.display = 'none';
+  }
+</script>
+</style>
+</body>
+</html>
+
+<!-- Add this CSS just before </head> or in your style.css for button color -->
+<style>
+  .btn,
+  .hero-btn,
+  .info-button {
+    background: #E23145 !important;
+    color: #fff !important;
+    border: none;
+    font-weight: 600;
+    transition: background 0.2s, color 0.2s;
+  }
+  .btn:hover,
+  .hero-btn:hover,
+  .info-button:hover {
+    background: #C09B2A !important;
+    color: #1C1F2C !important;
+  }
+</style>
+
+ 
+</style>
+
+<!-- Place this just before </body> -->
+<div id="underConstructionPopup" style="display:none;position:fixed;top:0;left:0;width:100vw;height:100vh;background:rgba(0,0,0,0.4);z-index:9999;justify-content:center;align-items:center;">
+  <div style="background:#fff3cd;color:#856404;border:2px solid #ffeeba;border-radius:10px;padding:32px 28px 24px 28px;max-width:350px;text-align:center;box-shadow:0 2px 16px rgba(0,0,0,0.12);position:relative;">
+    <button onclick="hideUnderConstructionPopup()" style="position:absolute;top:10px;right:16px;background:none;border:none;font-size:1.3rem;color:#856404;cursor:pointer;">&times;</button>
+    <i class="fa-solid fa-triangle-exclamation" style="font-size:2.5rem;color:#C09B2A;margin-bottom:16px;"></i>
+    <h2 style="margin:0 0 10px 0;font-size:1.3rem;color:#7C0000;">Feature Under Construction</h2>
+    <p style="margin:0;font-size:1.05rem;">This feature is currently under construction.<br>Please check back soon!</p>
+  </div>
+</div>
+<script>
+  function showUnderConstructionPopup() {
+    document.getElementById('underConstructionPopup').style.display = 'flex';
+  }
+  function hideUnderConstructionPopup() {
+    document.getElementById('underConstructionPopup').style.display = 'none';
+  }
+</script>
+</style>
+</body>
+</html>
+
+<!-- Add this CSS just before </head> or in your style.css for button color -->
+<style>
+  .btn,
+  .hero-btn,
+  .info-button {
+    background: #E23145 !important;
+    color: #fff !important;
+    border: none;
+    font-weight: 600;
+    transition: background 0.2s, color 0.2s;
+  }
+  .btn:hover,
+  .hero-btn:hover,
+  .info-button:hover {
+    background: #C09B2A !important;
+    color: #1C1F2C !important;
+  }
+</style>
+
+ 
+</style>
+
+<!-- Place this just before </body> -->
+<div id="underConstructionPopup" style="display:none;position:fixed;top:0;left:0;width:100vw;height:100vh;background:rgba(0,0,0,0.4);z-index:9999;justify-content:center;align-items:center;">
+  <div style="background:#fff3cd;color:#856404;border:2px solid #ffeeba;border-radius:10px;padding:32px 28px 24px 28px;max-width:350px;text-align:center;box-shadow:0 2px 16px rgba(0,0,0,0.12);position:relative;">
+    <button onclick="hideUnderConstructionPopup()" style="position:absolute;top:10px;right:16px;background:none;border:none;font-size:1.3rem;color:#856404;cursor:pointer;">&times;</button>
+    <i class="fa-solid fa-triangle-exclamation" style="font-size:2.5rem;color:#C09B2A;margin-bottom:16px;"></i>
+    <h2 style="margin:0 0 10px 0;font-size:1.3rem;color:#7C0000;">Feature Under Construction</h2>
+    <p style="margin:0;font-size:1.05rem;">This feature is currently under construction.<br>Please check back soon!</p>
+  </div>
+</div>
+<script>
+  function showUnderConstructionPopup() {
+    document.getElementById('underConstructionPopup').style.display = 'flex';
+  }
+  function hideUnderConstructionPopup() {
+    document.getElementById('underConstructionPopup').style.display = 'none';
+  }
+</script>
+</style>
+</body>
+</html>
+
+<!-- Add this CSS just before </head> or in your style.css for button color -->
+<style>
+  .btn,
+  .hero-btn,
+  .info-button {
+    background: #E23145 !important;
+    color: #fff !important;
+    border: none;
+    font-weight: 600;
+    transition: background 0.2s, color 0.2s;
+  }
+  .btn:hover,
+  .hero-btn:hover,
+  .info-button:hover {
+    background: #C09B2A !important;
+    color: #1C1F2C !important;
+  }
+</style>
+
+ 
+</style>
+
+<!-- Place this just before </body> -->
+<div id="underConstructionPopup" style="display:none;position:fixed;top:0;left:0;width:100vw;height:100vh;background:rgba(0,0,0,0.4);z-index:9999;justify-content:center;align-items:center;">
+  <div style="background:#fff3cd;color:#856404;border:2px solid #ffeeba;border-radius:10px;padding:32px 28px 24px 28px;max-width:350px;text-align:center;box-shadow:0 2px 16px rgba(0,0,0,0.12);position:relative;">
+    <button onclick="hideUnderConstructionPopup()" style="position:absolute;top:10px;right:16px;background:none;border:none;font-size:1.3rem;color:#856404;cursor:pointer;">&times;</button>
+    <i class="fa-solid fa-triangle-exclamation" style="font-size:2.5rem;color:#C09B2A;margin-bottom:16px;"></i>
+    <h2 style="margin:0 0 10px 0;font-size:1.3rem;color:#7C0000;">Feature Under Construction</h2>
+    <p style="margin:0;font-size:1.05rem;">This feature is currently under construction.<br>Please check back soon!</p>
+  </div>
+</div>
+<script>
+  function showUnderConstructionPopup() {
+    document.getElementById('underConstructionPopup').style.display = 'flex';
+  }
+  function hideUnderConstructionPopup() {
+    document.getElementById('underConstructionPopup').style.display = 'none';
+  }
+</script>
+</style>
+</body>
+</html>
+
+<!-- Add this CSS just before </head> or in your style.css for button color -->
+<style>
+  .btn,
+  .hero-btn,
+  .info-button {
+    background: #E23145 !important;
+    color: #fff !important;
+    border: none;
+    font-weight: 600;
+    transition: background 0.2s, color 0.2s;
+  }
+  .btn:hover,
+  .hero-btn:hover,
+  .info-button:hover {
+    background: #C09B2A !important;
+    color: #1C1F2C !important;
+  }
+</style>
+
+ 
+</style>
+
+<!-- Place this just before </body> -->
+<div id="underConstructionPopup" style="display:none;position:fixed;top:0;left:0;width:100vw;height:100vh;background:rgba(0,0,0,0.4);z-index:9999;justify-content:center;align-items:center;">
+  <div style="background:#fff3cd;color:#856404;border:2px solid #ffeeba;border-radius:10px;padding:32px 28px 24px 28px;max-width:350px;text-align:center;box-shadow:0 2px 16px rgba(0,0,0,0.12);position:relative;">
+    <button onclick="hideUnderConstructionPopup()" style="position:absolute;top:10px;right:16px;background:none;border:none;font-size:1.3rem;color:#856404;cursor:pointer;">&times;</button>
+    <i class="fa-solid fa-triangle-exclamation" style="font-size:2.5rem;color:#C09B2A;margin-bottom:16px;"></i>
+    <h2 style="margin:0 0 10px 0;font-size:1.3rem;color:#7C0000;">Feature Under Construction</h2>
+    <p style="margin:0;font-size:1.05rem;">This feature is currently under construction.<br>Please check back soon!</p>
+  </div>
+</div>
+<script>
+  function showUnderConstructionPopup() {
+    document.getElementById('underConstructionPopup').style.display = 'flex';
+  }
+  function hideUnderConstructionPopup() {
+    document.getElementById('underConstructionPopup').style.display = 'none';
+  }
+</script>
+</style>
+</body>
+</html>
+
+<!-- Add this CSS just before </head> or in your style.css for button color -->
+<style>
+  .btn,
+  .hero-btn,
+  .info-button {
+    background: #E23145 !important;
+    color: #fff !important;
+    border: none;
+    font-weight: 600;
+    transition: background 0.2s, color 0.2s;
+  }
+  .btn:hover,
+  .hero-btn:hover,
+  .info-button:hover {
+    background: #C09B2A !important;
+    color: #1C1F2C !important;
+  }
+</style>
+
+ 
+</style>
+
+<!-- Place this just before </body> -->
+<div id="underConstructionPopup" style="display:none;position:fixed;top:0;left:0;width:100vw;height:100vh;background:rgba(0,0,0,0.4);z-index:9999;justify-content:center;align-items:center;">
+  <div style="background:#fff3cd;color:#856404;border:2px solid #ffeeba;border-radius:10px;padding:32px 28px 24px 28px;max-width:350px;text-align:center;box-shadow:0 2px 16px rgba(0,0,0,0.12);position:relative;">
+    <button onclick="hideUnderConstructionPopup()" style="position:absolute;top:10px;right:16px;background:none;border:none;font-size:1.3rem;color:#856404;cursor:pointer;">&times;</button>
+    <i class="fa-solid fa-triangle-exclamation" style="font-size:2.5rem;color:#C09B2A;margin-bottom:16px;"></i>
+    <h2 style="margin:0 0 10px 0;font-size:1.3rem;color:#7C0000;">Feature Under Construction</h2>
+    <p style="margin:0;font-size:1.05rem;">This feature is currently under construction.<br>Please check back soon!</p>
+  </div>
+</div>
+<script>
+  function showUnderConstructionPopup() {
+    document.getElementById('underConstructionPopup').style.display = 'flex';
+  }
+  function hideUnderConstructionPopup() {
+    document.getElementById('underConstructionPopup').style.display = 'none';
+  }
+</script>
+</style>
+</body>
+</html>
+
+<!-- Add this CSS just before </head> or in your style.css for button color -->
+<style>
+  .btn,
+  .hero-btn,
+  .info-button {
+    background: #E23145 !important;
+    color: #fff !important;
+    border: none;
+    font-weight: 600;
+    transition: background 0.2s, color 0.2s;
+  }
+  .btn:hover,
+  .hero-btn:hover,
+  .info-button:hover {
+    background: #C09B2A !important;
+    color: #1C1F2C !important;
+  }
+</style>
+
+ 
+</style>
+
+<!-- Place this just before </body> -->
+<div id="underConstructionPopup" style="display:none;position:fixed;top:0;left:0;width:100vw;height:100vh;background:rgba(0,0,0,0.4);z-index:9999;justify-content:center;align-items:center;">
+  <div style="background:#fff3cd;color:#856404;border:2px solid #ffeeba;border-radius:10px;padding:32px 28px 24px 28px;max-width:350px;text-align:center;box-shadow:0 2px 16px rgba(0,0,0,0.12);position:relative;">
+    <button onclick="hideUnderConstructionPopup()" style="position:absolute;top:10px;right:16px;background:none;border:none;font-size:1.3rem;color:#856404;cursor:pointer;">&times;</button>
+    <i class="fa-solid fa-triangle-exclamation" style="font-size:2.5rem;color:#C09B2A;margin-bottom:16px;"></i>
+    <h2 style=
