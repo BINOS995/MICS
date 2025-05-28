@@ -449,19 +449,29 @@
   }
 </style>
 
-  <!-- Modal Dialog for Fresh Term Announcement -->
-  <div id="schoolModal" style="display: flex; align-items: center; justify-content: center; position: fixed; z-index: 9999; left: 0; top: 0; width: 100vw; height: 100vh; background: rgba(28,31,44,0.7);">
-    <div style="background: #fff; border-radius: 18px; box-shadow: 0 4px 32px rgba(28,31,44,0.18); padding: 36px 32px 28px 32px; max-width: 400px; width: 90%; text-align: center; position: relative;">
-      <button onclick="document.getElementById('schoolModal').style.display='none'" style="position: absolute; top: 14px; right: 18px; background: none; border: none; font-size: 1.6rem; color: #E23145; cursor: pointer;">&times;</button>
-      <img src="images/School Logo. png.png" alt="School Logo" style="max-width: 120px; margin-bottom: 18px;">
-      <h2 style="color: #1C1F2C; font-weight: 700; margin-bottom: 10px;">Welcome to a Fresh Term</h2>
-      <p style="font-size: 1.1rem; color: #1C1F2C; margin-bottom: 18px;">
-        We are delighted to begin a new academic term at Mirekua International Community School. As we embark on this journey together, we encourage all students and staff to approach the term with enthusiasm, dedication, and a commitment to excellence.
-      </p>
-      <div style="font-size: 1.1rem; color: #7C0000; font-weight: 600;">
-        Best wishes for a productive and inspiring term ahead.
-      </div>
-    </div>
+
+ 
+
+
+<!-- Place this just before </body> -->
+<div id="underConstructionPopup" style="display:none;position:fixed;top:0;left:0;width:100vw;height:100vh;background:rgba(0,0,0,0.4);z-index:9999;justify-content:center;align-items:center;">
+  <div style="background:#fff3cd;color:#856404;border:2px solid #ffeeba;border-radius:10px;padding:32px 28px 24px 28px;max-width:350px;text-align:center;box-shadow:0 2px 16px rgba(0,0,0,0.12);position:relative;">
+    <button onclick="hideUnderConstructionPopup()" style="position:absolute;top:10px;right:16px;background:none;border:none;font-size:1.3rem;color:#856404;cursor:pointer;">&times;</button>
+    <i class="fa-solid fa-triangle-exclamation" style="font-size:2.5rem;color:#C09B2A;margin-bottom:16px;"></i>
+    <h2 style="margin:0 0 10px 0;font-size:1.3rem;color:#7C0000;">Feature Under Construction</h2>
+    <p style="margin:0;font-size:1.05rem;">This feature is currently under construction.<br>Please check back soon!</p>
+  </div>
+</div>
+<script>
+  function showUnderConstructionPopup() {
+    document.getElementById('underConstructionPopup').style.display = 'flex';
+  }
+  function hideUnderConstructionPopup() {
+    document.getElementById('underConstructionPopup').style.display = 'none';
+  }
+</script>
+</style>
+<!-- Modern Modal with Flier Image -->
 <style>
 #schoolModal {
   opacity: 0;
@@ -469,6 +479,28 @@
   transition: opacity 0.4s cubic-bezier(.4,0,.2,1);
   display: flex;
   position: fixed;
+  z-index: 9999;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  background: rgba(0,0,0,0.7);
+}
+#schoolModal.active {
+  opacity: 1;
+  pointer-events: auto;
+}
+#schoolModal .modal-content {
+  transform: scale(0.92);
+  transition: transform 0.4s cubic-bezier(.4,0,.2,1);
+}
+#schoolModal.active .modal-content {
+  transform: scale(1);
+}
+</style>
+<div id="schoolModal">
   <div class="modal-content" style="background:#fff;border-radius:18px;box-shadow:0 4px 32px rgba(0,0,0,0.18);padding:0;max-width:420px;width:90vw;position:relative;overflow:hidden;">
     <button id="closeModalBtn" style="position:absolute;top:16px;right:16px;background:none;border:2px solid #1976d2;border-radius:8px;width:40px;height:40px;display:flex;align-items:center;justify-content:center;font-size:2rem;color:#E23145;cursor:pointer;z-index:2;transition:background 0.2s;">
       &times;
