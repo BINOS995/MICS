@@ -8013,9 +8013,14 @@ h1, h2, h3, h4, h5,
               padding: 0;
             }
             
+            .home-slider.owl-carousel,
+            .slider-item,
+            .slider-text {
+              height: 60vh; /* or another value that fits your design */
+            }
+            
             .home-slider.owl-carousel {
               position: relative;
-              height: 100vh;
               width: 100%;
               z-index: 0;
             }
@@ -8096,7 +8101,6 @@ h1, h2, h3, h4, h5,
               background-size: cover;
               background-repeat: no-repeat;
               background-position: center center;
-              height: 100vh;
               position: relative;
               z-index: 0;
             }
@@ -8109,7 +8113,6 @@ h1, h2, h3, h4, h5,
             }
             
             .slider-text {
-              height: 100vh;
               display: flex;
               align-items: center;
               justify-content: center;
